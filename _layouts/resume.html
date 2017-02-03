@@ -32,7 +32,8 @@
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <!-- This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S. -->
+          <p>Materials research scientist specializing in phase-field models of solid state coarsening phenomena. Passionate about software development for scientific computing. Interested in opportunities in materials research and HPC.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -44,48 +45,6 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
-          <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
-        </div><!-- end of resume-item -->
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
-
       {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
@@ -94,14 +53,59 @@
           <h2>Education</h2>
         </header>
 
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
+          <h3 class="resume-item-title" itemprop="name">Rensselaer Polytechnic Institute</h3>
+          <h4 class="resume-item-details" itemprop="description">Doctor of Philosophy, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2011 &mdash; 2015</h4>
+          <p class="resume-item-copy">Thesis: "Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature."</p>
+          <p class="resume-item-copy">Performed large-scale phase field simulations of normal isotropic grain growth on high performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices) from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face elimination responsible for biasing topology in populations of polyhedral grains in synthetic, simulated, and real metal microstructures.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
+          <h4 class="resume-item-details" itemprop="description">Master of Science, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2009 &mdash; 2011</h4>
+          <p class="resume-item-copy">Thesis: "Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution."</p>
+          <p class="resume-item-copy">Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous chemical reactor under various combinations of temperature, pH, reactant concentrations, and flow rate. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice parameters.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://cbe.rpi.edu">
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, <a href="http://cbe.rpi.edu">Chemical Engineering</a> &bull; Troy, NY &bull; 2002 &mdash; 2006</h4>
         </div>
 
       </section>
       <!-- end Education -->
+      {% endif %}
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.nist.gov">
+          <h3 class="resume-item-title" itemprop="name">National Institute of Standards and Technology</h3>
+          <h4 class="resume-item-details" itemprop="description">NRC Postdoctoral Associate &bull; Gaithersburg, MD &bull; July 2015 &mdash; Present</h4>
+          <p class="resume-item-copy">Implemented phase field model for solid-state transformation in alloy systems with three components and four phases, analogous to Inconel 625. Designed initial conditions based on electron micrographs of additively manufactured Inconel 625 to simulate microstructure evolution during heat treatment. Produced thermodynamic models through simplification of quantitative CALPHAD databases while retaining key phase diagram features, using computer algebra systems to accurately generate expressions and multivariable derivatives for import into phase field software. Earned bonus for contributions to FiPy phase field code.</p>
+
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Veeco Instruments &bull; Solar Process Development Center</h3>
+          <h4 class="resume-item-details" itemprop="description">Process Engineer, part time &bull; Clifton Park, NY &bull; July 2009 &mdash; August 2011</h4>
+          <p class="resume-item-copy">Researched non-toxic alternatives to CdS, reporting to senior management. Traveled to Helsinki, Finland to evaluate state-of-the-art atomic layer deposition reactor.</p>
+
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">DayStar Technologies &bull; Materials Development Group</h3>
+          <h4 class="resume-item-details" itemprop="description">Process Engineer &bull; Clifton Park, NY &bull; January 2009 &mdash; June 2009</h4>
+          <h4 class="resume-item-details" itemprop="description">Process Engineer &bull; Clifton Park, NY &bull; July 2006 &mdash; December 2008</h4>
+          <p class="resume-item-copy">Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic materials and novel reactor geometries. Achieved 72&times; scaleup in CdS deposition area with only 6&times; increase in waste generation. Earned bonus for contributions to the reactor's success.</p>
+
+        </div>
+
+      </section>
+      <!-- end Experience -->
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -112,20 +116,73 @@
           <h2>Projects</h2>
         </header>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
-        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://github.com/mesoscale">
+          <h3 class="resume-item-title" itemprop="name">Mesoscale Microstructure Simulation Project</h3>
+          <h4 class="resume-item-details" itemprop="description">Software Developer &bull; January 2013 &mdash; Present</h4>
+          <p class="resume-item-copy">MMSP is an open source library for phase-field and kinetic Monte Carlo simulations written in C++ with MPI. Invited to join project as co-developer based on contributed patches to eliminate memory leaks and resolve race conditions in parallel computing environments. Eliminated corruption in parallel I/O on large-block filesystems, enabling clean execution of phase field and kinetic Monte Carlo research simulations on IBM Blue Gene/Q supercomputers with up to 4096 cores. Implemented testing of proposed source code changes through automatic online continuous integration.</p>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
         </div>
 
       </section>
       <!-- end Projects -->
+      {% endif %}
+
+      {% if site.resume_section_publications %}
+      <!-- begin Publications -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Refereed Publications</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li>T. Keller, G. Lindwall, S. Ghosh, L. Ma, B. Lane, F. Zhang, U. Kattner, J. Heigel, E. Lass, Y. Idell, M. Williams, A. Allen, J. Guyer, and L. Levine. "Application of Finite Element, Phase-field, and CALPHAD-based Methods to Additive Manufacturing of Ni Alloys." Manuscript in preparation (2017).</li>
+            <li>T. Keller, B. Cutler, E. Lazar, and D. Lewis. "Comparative Grain Topology." <em>Acta Materialia</em> <b>66</b> (2014) 414&mdash;423. DOI: <a href="http://dx.doi.org/10.1016/j.actamat.2013.11.039">10.1016/j.actamat.2013.11.039</a>.</li>
+            <li>T. Keller, B. Cutler, M. Glicksman, and D. Lewis. "Enumeration of Polyhedra for Grain Growth Analysis." In <em>Proceedings of the First International Conference on 3D Materials Science</em> (3DMS’12), Seven Springs, PA, July 8&mdash;12, 2012, pages 97&mdash;106.</li>
+          </ul>
+        </div>
+
+        <header class="section-header">
+          <h2>Presentations<sup>*</sup></h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer. "Study on the Effects of Microsegregation, Temperature, and Stress on IN625 Microstructures by Phase Field Simulations." TMS Annual Meeting. San Diego, CA: February 28, 2017.</li>            
+            <li><u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer. "Arresting deleterious particle growth in Inconel 625: Phase field model description." MS&amp;T Annual Meeting. Salt Lake City, UT: October 27, 2016.</li>
+            <li><u>T. Keller</u>, B. Cutler, and D. Lewis. "Finite grain boundary networks from phase-field grain growth data." Invited talk to the NIST Material Science &amp; Engineering Division. Gaithersburg, MD: December 8, 2014.</li>
+            <li>T. Keller, B. Cutler, and <u>D. Lewis</u>. Invited talk: "Comparative analysis of polycrystals in simulated &amp; experimental datasets." MS&amp;T Annual Meeting. Pittsburgh, PA: October 15, 2014.</li>
+            <li>T. Keller, D. Crist, <u>D. Lewis</u>, Y. Tan, K. Huang, and C. Li. "Realtime prediction of grain growth during materials processing." PICS3. Marseille, France: May 2014.</li>
+            <li><u>T. Keller</u> and D. Lewis. "Topological characterization of 3D microstructures with diffuse interfaces." TMS Annual Meeting. San Diego, CA: February 19, 2014.</li>
+            <li><u>T. Keller</u>, D. Lewis, B. Cutler, and E. Lazar. "Topological comparison of synthetic microstructures." MS&amp;T Annual Meeting. Montreal, QC, Canada: October 28, 2013.</li>
+            <li>T. Keller, <u>D. Lewis</u>, B. Cutler, B. Yener, S. Rock, G. Saunders, and M. Muench. "The topology of polycrystals." PICS3. Marseille, France: July 2013.</li>
+            <li><u>T. Keller</u>, B. Cutler, G. Yauney, and D. Lewis. "Topological analysis of collapsing grains." MS&amp;T Annual Meeting. Pittsburgh, PA: October 10, 2012.</li>
+            <li>T. Keller, B. Cutler, G. Yauney, and <u>D. Lewis</u>. "Polyhedral graphs &amp; grain topology." International Conference on 3-Dimensional Materials Science (3DMS). Seven Springs, PA: July 11, 2012.</li>
+          </ul>
+
+          <p class="resume-item-copy"><sup>*</sup>Presenter's name is <u>underlined</u>.</p>
+        </div>
+
+        <header class="section-header">
+          <h2>Posters<sup>*</sup></h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><u>T. Keller</u> and D. Lewis. "Trijunction Drag Affects Grain Topology." NIST Chapter of Sigma Xi, Annual Postdoctoral Poster Session. Gaithersburg, MD: February 19, 2016.</li>
+            <li><u>T. Keller</u> and D. Lewis. "Grain topology from 3D phase-field simulations." Eastern New York Chapter of ASM International, Spring Symposium. Troy, NY: November 18, 2014.</li>
+            <li><u>T. Keller</u>, B. Cutler, G. Yauney, and D. Lewis. "Grain topologies in synthetic, simulated, and real microstructures." Rensselaer Moves into Petascale Computing: Celebration &amp; Workshop. Troy, NY: October 3, 2013.</li>
+            <li><u>T. Keller</u>, B. Cutler, G. Yauney, and D. Lewis. "Topological distributions in synthetic microstructures and grains." 8th International Conference on Porous Metals and Metallic Foams (MetFoam). Raleigh, NC: June 23-26, 2013.</li>
+            <li>D. Lewis, G. Saunders, S. Rock, <u>T. Keller</u>, J. Mao, M. Muench, J. Symons, D. Hoffman, M. Oullette, and C. LaBarre. "Development of an automated serial sectioning system." CATS/CEG Advanced Manufacturing Conference. Troy, NY: April 22, 2013.</li>
+            <li><u>T. Keller</u>, G. Yauney, B. Cutler, and D. Lewis. "Grain populations in topological space." Eastern New York Chapter of ASM International, Spring Symposium. Troy, NY: December 5, 2012.</li>
+          </ul>
+
+          <p class="resume-item-copy"><sup>*</sup>Presenter's name is <u>underlined</u>.</p>
+        </div>
+
+      </section>
+      <!-- end Publications -->
       {% endif %}
 
       {% if site.resume_section_skills %}
@@ -137,18 +194,35 @@
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
+          <h4 class="resume-item-details">Scientific Computing</h4>
+          <ul class="resume-item-list">
+            <li>Parallel programming: OpenMP, MPI-2/MPI-IO, POSIX threads</li>
+            <li>Debugging: gdb, gprof, Valgrind</li>
+            <li>Version control: git, GitHub, branching workflows</li>
+            <li>Data management: mdadm (12TB RAID5, 8TB RAID6), rdiff-backup, rsnapshot</li>
+            <li>Cluster management: Ansible, Ganglia, NFS</li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
+          <h4 class="resume-item-details">Technical Writing and Quantitative Visualization</h4>
+          <ul class="resume-item-list">
+            <li><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></h4></li>
+            <li>Ti<em>k</em>Z</li>
+            <li>matplotlib</li>
+            <li>R</li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
+          <h4 class="resume-item-details">Experimental Techniques</h4>
+          <ul class="resume-item-list">
+            <li>Metallographic polishing and etching: Fe-, Cr-, Cu-, Zn-, and Ni-based alloys</li>
+            <li>Scanning electron microscopy (SEM) of inorganic specimens</li>
+            <li>X-ray diffractometry</li>
+            <li>UV-visible light spectrophotometry</li>
+            <li>profilometry of thin films</li>
+          </ul>
         </div>
 
       </section>
@@ -164,21 +238,9 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
+          <h3 class="resume-item-title" itemprop="award">8<sup>th</sup> International Conference on Porous Metals and Metallic Foams (MetFoam)</h3>
+          <h4 class="resume-item-details">2<sup>nd</sup> Place Poster Award &bull; 2013</h4>
+          <p class="resume-item-copy">Awarded for outstanding scientific poster.</p>
         </div>
 
       </section>
@@ -190,20 +252,41 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Associations</h2>
+          <h2>Professional Development</h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
+          <h3 class="resume-item-title"><a href="http://pages.nist.gov/chimad-phase-field">CHiMaD Phase Field Working Group</a></h3>
+          <h4 class="resume-item-details">Workshop IV &amp; Installathon &bull; January 17&mdash;20, 2017</h4>
+          <h4 class="resume-item-details">Workshop III &amp; Hackathon II &bull; May 3&mdash;5, 2016</h4>
+          <h4 class="resume-item-details">Workshop II &amp; Hackathon I &bull; October 13&mdash;16, 2016</h4>
+          <p class="resume-item-copy">Active participant in time-limited coding activities and discussions of progress toward a "community code" for phase field simulations.</p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standin &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
+          <h3 class="resume-item-title">NIST Women in STEM</h3>
+          <h4 class="resume-item-details">STEM Role Model Training &bull; November 29, 2016</h4>
+          <h4 class="resume-item-details">Meal with a Mentor &bull; June 28, 2016</h4>
+          <p class="resume-item-copy">Active participant in one-on-one, group, and panel discussions with high school, undergraduate, and graduate students on the pursuit of careers in STEM.</p>
         </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="http://software-carpentry.org">Software Carpentry</a></h3>
+          <h4 class="resume-item-details">NIST Workshop &bull;  September 23&mdash;24, 2015</h4>
+          <p class="resume-item-copy">Worked through exercises in Unix shell scripting, python programming and visualization, version control with git, and data storage in SQL databases.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="http://iimec.tamu.edu/">IIMEC Summer School</a></h3>
+          <h4 class="resume-item-details">Computational Materials Science Across Scales &bull; June 2&mdash;11, 2014</h4>
+          <p class="resume-item-copy">Lecture topics included density functional theory, molecular dynamics, thermodynamics, phase-field models, and continuum mechanics. Equal coverage of theory and numerical exercises in collaborative workshops.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="http://www.siam.org">Society for Industrial and Applied Mathematics</a> (SIAM)</h3>
+          <h4 class="resume-item-details">Member in good standing &bull; 2014 &mdash; Present</h4>
+        </div>
+
 
       </section>
       <!-- end Associations -->
@@ -214,13 +297,16 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Additional Links</h2>
+          <h2>Project Links</h2>
         </header>
 
         <div class="resume-item">
           <ul class="resume-item-list">
-            <li><a href="#">Springfield Poker Club</a></li>
-            <li><a href="#">Springfield Donut Eater's User Group</a></li>
+            <li><a href="http://github.com/tkphd">Software Portfolio on GitHub</a></li>
+            <li><a href="http://www.openhub.net/accounts/tkphd">Profile on OpenHub</a></li>
+            <li><a href="http://github.com/usnistgov/phasefield-precipitate-aging">Postdoctoral Research Code: Solid-State Precipitation</a></li>
+            <li><a href="http://github.com/tkphd/trijunctionThreshold">Graduate Research Code: Grain Growth with Trijunction Drag</a></li>
+            <li><a href="http://github.com/mesoscale/mmsp">Mesoscale Microstructure Simulation Project</a></li>
           </ul>
         </div>
 
@@ -245,8 +331,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Built using the <a href="https://github.com/jglovier/resume-template">Jekyll+GitHub resume template</a> by <a href="http://twitter.com/jglovier">@jglovier</a>.</p>
       </footer>
 
     </div>
