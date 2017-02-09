@@ -45,35 +45,6 @@
 
       </header>
 
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
-          <h3 class="resume-item-title" itemprop="name">Rensselaer Polytechnic Institute</h3>
-          <h4 class="resume-item-details" itemprop="description">Doctor of Philosophy, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2011 &mdash; 2015</h4>
-          <p class="resume-item-copy">Thesis: "Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature."</p>
-          <p class="resume-item-copy">Performed large-scale phase field simulations of normal isotropic grain growth on high performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices) from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face elimination responsible for biasing topology in populations of polyhedral grains in synthetic, simulated, and real metal microstructures.</p>
-        </div>
-
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
-          <h4 class="resume-item-details" itemprop="description">Master of Science, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2009 &mdash; 2011</h4>
-          <p class="resume-item-copy">Thesis: "Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution."</p>
-          <p class="resume-item-copy">Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous chemical reactor under various combinations of temperature, pH, reactant concentrations, and flow rate. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice parameters.</p>
-        </div>
-
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://cbe.rpi.edu">
-          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, <a href="http://cbe.rpi.edu">Chemical Engineering</a> &bull; Troy, NY &bull; 2002 &mdash; 2006</h4>
-        </div>
-
-      </section>
-      <!-- end Education -->
-      {% endif %}
-
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -106,6 +77,69 @@
 
       </section>
       <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Scientific Computing</h4>
+          <ul class="resume-item-list">
+            <li>Parallel programming: OpenMP, MPI-2/MPI-IO, POSIX threads</li>
+            <li>Debugging: gdb, gprof, Valgrind</li>
+            <li>Version control: git, GitHub, branching workflows</li>
+            <li>Data management: mdadm (RAID1, RAID5, RAID6), rdiff-backup, rsnapshot</li>
+            <li>Cluster management: Ansible, Ganglia, NFS</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Experimental Techniques</h4>
+          <ul class="resume-item-list">
+            <li>Metallographic polishing and etching: Fe-, Cr-, Cu-, Zn-, and Ni-based alloys</li>
+            <li>Scanning electron microscopy (SEM) of inorganic specimens</li>
+            <li>X-ray diffractometry</li>
+            <li>UV-visible light spectrophotometry</li>
+            <li>Contact profilometry of thin films</li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
+          <h3 class="resume-item-title" itemprop="name">Rensselaer Polytechnic Institute</h3>
+          <h4 class="resume-item-details" itemprop="description">Doctor of Philosophy, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2011 &mdash; 2015</h4>
+          <p class="resume-item-copy">Thesis: "Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature."</p>
+          <p class="resume-item-copy">Performed large-scale phase field simulations of normal isotropic grain growth on high performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices) from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face elimination responsible for biasing topology in populations of polyhedral grains in synthetic, simulated, and real metal microstructures.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://mse.rpi.edu">
+          <h4 class="resume-item-details" itemprop="description">Master of Science, <a href="http://mse.rpi.edu">Materials Engineering</a> &bull; Troy, NY &bull; 2009 &mdash; 2011</h4>
+          <p class="resume-item-copy">Thesis: "Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution."</p>
+          <p class="resume-item-copy">Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous chemical reactor under various combinations of temperature, pH, reactant concentrations, and flow rate. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice parameters.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://cbe.rpi.edu">
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, <a href="http://cbe.rpi.edu">Chemical Engineering</a> &bull; Troy, NY &bull; 2002 &mdash; 2006</h4>
+        </div>
+
+      </section>
+      <!-- end Education -->
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -183,50 +217,6 @@
 
       </section>
       <!-- end Publications -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Scientific Computing</h4>
-          <ul class="resume-item-list">
-            <li>Parallel programming: OpenMP, MPI-2/MPI-IO, POSIX threads</li>
-            <li>Debugging: gdb, gprof, Valgrind</li>
-            <li>Version control: git, GitHub, branching workflows</li>
-            <li>Data management: mdadm (12TB RAID5, 8TB RAID6), rdiff-backup, rsnapshot</li>
-            <li>Cluster management: Ansible, Ganglia, NFS</li>
-          </ul>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Technical Writing and Quantitative Visualization</h4>
-          <ul class="resume-item-list">
-            <li><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></h4></li>
-            <li>Ti<em>k</em>Z</li>
-            <li>matplotlib</li>
-            <li>R</li>
-          </ul>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Experimental Techniques</h4>
-          <ul class="resume-item-list">
-            <li>Metallographic polishing and etching: Fe-, Cr-, Cu-, Zn-, and Ni-based alloys</li>
-            <li>Scanning electron microscopy (SEM) of inorganic specimens</li>
-            <li>X-ray diffractometry</li>
-            <li>UV-visible light spectrophotometry</li>
-            <li>profilometry of thin films</li>
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_recognition %}
