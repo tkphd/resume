@@ -25,20 +25,21 @@ resume_header_contact_info:  "tkellerphd@gmail.com"
 # comment out to hide
 resume_section_experience:   true
 resume_section_education:    true
-resume_section_projects:     true
 resume_section_publications: true
-resume_section_skills:       true
+resume_section_projects:     false
 resume_section_recognition:  true
+resume_section_skills:       true
 resume_section_links:        true
-resume_section_associations: true
+resume_section_associations: false
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:         "https://github.com/tkphd"
+  resume_orcid_url:          "https://orcid.org/0000-0002-2920-8302"
+  resume_scholar_url:        "https://scholar.google.com/citations?user=pHf0ImgAAAAJ&hl=en&oi=ao"
   resume_linkedin_url:       "https://www.linkedin.com/in/trevor-keller-a8610ba"
   resume_website_url:        "https://tkphd.github.io"
-  resume_scholar_url:        "https://scholar.google.com/citations?user=pHf0ImgAAAAJ&hl=en&oi=ao"
   resume_twitter_url:        "http://twitter.com/tkphd"
 resume_print_social_links:   true
 

@@ -1,0 +1,16 @@
+---
+
+- name: Mesoscale Microstructure Simulation Project
+  url: https://github.com/mesoscale/mmsp
+  nickname: MMSP
+  role: Co-Developer
+  start: 2013
+  until: Present
+  summary: >
+    MMSP is an open source library for phase-field and kinetic Monte Carlo simulations written in
+    C++ with MPI. Invited to join project as co-developer based on contributed patches to eliminate
+    memory leaks and resolve race conditions in parallel computing environments. Eliminated
+    corruption in parallel I/O on large-block filesystems, enabling clean execution of phase field
+    and kinetic Monte Carlo research simulations on IBM Blue&nbsp;Gene/Q supercomputers with up to 4096
+    cores. Implemented testing of proposed source code changes through automatic online continuous
+    integration.

@@ -1,0 +1,39 @@
+---
+
+- name: Rensselaer Polytechnic Institute
+  degrees:
+  - name: Doctor of Philosophy
+    field: Materials Engineering
+    location: Troy, NY
+    department: Materials Science and Engineering Department
+    url: http://mse.rpi.edu
+    start: 2011
+    until: 2015
+    thesis: Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature
+    summary: >
+      Performed large-scale phase field simulations of normal isotropic grain growth on high
+      performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and
+      implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices)
+      from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face
+      elimination responsible for biasing topology in populations of polyhedral grains in synthetic,
+      simulated, and real metal microstructures.
+  - name: Master of Science
+    field: Materials Engineering
+    location: Troy, NY
+    department: Materials Science and Engineering Department
+    url: http://mse.rpi.edu
+    start: 2009
+    until: 2011
+    thesis: Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution
+    summary: >
+      Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous
+      chemical reactor under various combinations of temperature, pH, reactant concentrations, and
+      flow rate. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice
+      parameters.
+  - name: Bachelor of Science
+    field: Chemical Engineering
+    location: Troy, NY
+    department: Chemical Engineering Department
+    url: http://cbe.rpi.edu
+    start: 2002
+    until: 2006

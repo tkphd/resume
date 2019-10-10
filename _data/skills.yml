@@ -1,0 +1,17 @@
+---
+
+- name: Scientific Computing
+  skills:
+    - name: "Parallel programming: CUDA, OpenMP, MPI-2/MPI-IO, POSIX threads"
+    - name: "Debugging: gdb, gprof, Valgrind"
+    - name: "Version control: git, GitHub, branching workflows"
+    - name: "Data management: mdadm (RAID1, RAID5, RAID6), rdiff-backup, rsnapshot"
+    - name: "Cluster management: Ansible, Ganglia, NFS"
+
+- name: Experimental Techniques
+  skills:
+    - name: "Metallographic polishing and etching: Fe-, Cr-, Cu-, Zn-, and Ni-based alloys"
+    - name: "Scanning electron microscopy (SEM) of inorganic specimens"
+    - name: "X-ray diffractometry"
+    - name: "UV-visible light spectrophotometry"
+    - name: "Contact profilometry of thin films"

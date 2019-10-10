@@ -1,0 +1,60 @@
+---
+
+- name: National Institute of Standards and Technology
+  home: https://www.nist.gov
+  department: Materials Science and Engineering Division
+  url: https://www.nist.gov/mml/materials-science-and-engineering-division
+  positions:
+    - title: Research Staff
+      start: July 2017
+      until: Present
+      location: Gaithersburg, MD
+      summary: >
+        Developing thermodynamic and kinetic models of precipitate particle evolution and
+        equilibrium in ternary alloys analogous to nickel-based superalloys.
+    - title: <a href="https://www.nist.gov/programs-projects/nrc-postdoctoral-associate-program">NRC</a> Postdoctoral Associate
+      start: July 2015
+      until: June 2017
+      location: Gaithersburg, MD
+      summary: >
+        Implemented phase field model for solid-state transformation in alloy systems with three
+        components and four phases, analogous to Inconel 625. Designed initial conditions based on
+        electron micrographs of additively manufactured Inconel 625 to simulate microstructure
+        evolution during heat treatment. Produced thermodynamic models through simplification of
+        quantitative CALPHAD databases while retaining key phase diagram features, using computer
+        algebra systems to accurately generate expressions and multivariable derivatives for import
+        into phase field software.
+  
+- name: Veeco Instruments
+  home: https://www.veeco.com
+  department: Solar Process Development Center <i>(divested)</i>
+  url: https://www.veeco.com/company/news/veeco-establishes-solar-process-development-center
+  caveat: Now a unit of SUNY Polytechnic.
+  positions:
+    - title: Process Engineer
+      start: July 2009
+      until: August 2011
+      location: Clifton Park, NY
+      summary: >
+        Part-time during graduate studies for the master's degree. Researched non-toxic alternatives
+        to CdS, reporting to senior management. Traveled to Helsinki, Finland to evaluate
+        state-of-the-art atomic layer deposition reactor.
+
+- name: DayStar Technologies <i>(defunct)</i>
+  url: https://web.archive.org/web/20090209214859/http://daystartech.com/
+  department: Materials Development Group
+  home: https://web.archive.org/web/20090209214859/http://daystartech.com/
+  caveat: Defunct.
+  positions:
+    - title: Process Engineer
+      start: January 2009
+      until: June 2009
+      location: Clifton Park, NY
+    - title: Process Technician
+      start: July 2006
+      until: December 2008
+      location: Clifton Park, NY
+      summary: >
+        Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic
+        materials and novel reactor geometries. Achieved 72&times; scaleup in CdS deposition area
+        with only 6&times; increase in waste generation.
