@@ -1,6 +1,7 @@
+---
 # Site settings
 title: "Trevor Keller, Ph. D."
-description: "Professional resume and CV of Trevor Keller, Ph. D."
+description: "Professional résumé and CV of Trevor Keller, Ph. D."
 
 # Build settings
 markdown: kramdown
@@ -14,6 +15,9 @@ resume_name:                 "Trevor Keller, Ph. D."
 resume_title:                "Materials Research Scientist"
 resume_contact_email:        "tkellerphd@gmail.com"
 resume_header_contact_info:  "tkellerphd@gmail.com"
+resume_summary: >
+  Specializing in phase-field models of solid state coarsening phenomena. Passionate about software
+  development for scientific computing.
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -37,10 +41,10 @@ resume_section_associations: false
 resume_social_links:
   resume_github_url:         "https://github.com/tkphd"
   resume_orcid_url:          "https://orcid.org/0000-0002-2920-8302"
+  resume_website_url:        "http://www.trevorkeller.com"
+  resume_twitter_url:        "http://twitter.com/tkphd"
   resume_scholar_url:        "https://scholar.google.com/citations?user=pHf0ImgAAAAJ&hl=en&oi=ao"
   resume_linkedin_url:       "https://www.linkedin.com/in/trevor-keller-a8610ba"
-  resume_website_url:        "https://tkphd.github.io"
-  resume_twitter_url:        "http://twitter.com/tkphd"
 resume_print_social_links:   true
 
 # Design settings

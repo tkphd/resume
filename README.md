@@ -1,64 +1,56 @@
-# resume-template
+# my résumé
 
-*A simple Jekyll + GitHub Pages powered resume template.*
+This repository is a customized fork of
+[jglovier's](https://github.com/jglovier)
+[resume-template](https://github.com/jglovier/resume-template),
 
-![img](images/screenshot.png)
+> A simple Jekyll + GitHub Pages powered résumé template.
 
-## Docs
+## Customizing
 
-### Running locally
+First you'll want to fork the repo to your own account, then clone it locally and customize.
+Use `jekyll serve` to build a local site for inspection.
+
+### Options/configuration
+
+Most of the basic customization will take place in the `_config.yml` file. From there, you can set
+URLs for your myriad social media accounts and toggle each section of the résumé on and off.
+
+### Content
+
+All the information rendered in the résumé can be found under `_data`, stored in YAML files. This is
+where you'll add new content, e.g., new work experience or papers. This stripped-down format helps
+you focus on the text, which Jekyll will render beautifully for you later on. There's some help on
+YAML data files in the [Jekyll docs](https://jekyllrb.com/docs/datafiles/).
+
+Don't forget to run spellcheck!
+
+### Layout
+
+The HTML template that turns into your résumé is `/_layouts/resume.html`. If you want to change what
+a section shows, or change the sequence of sections, edit `resume.html`. To modify the appearance of
+a section or elements of a section, you'll have to edit the CSS, which is in `_sass/_resume.scss`.
+If something isn't showing up, or is rendering in a weird way, your browser's context menu (right
+click) should give you the option to "inspect" elements of the page. Check for warnings and error
+messages in the console.
+
+## Running locally
 
 To test locally, run the following in your terminal:
 
 1. Clone repo locally
-1. `bundle install`
-2. `bundle exec jekyll serve`
-3. Open your browser to `localhost:4000`
+2. `bundle install`
+3. `jekyll serve`
+4. Open your browser to `localhost:4000`
 
-### Customizing
+## Publishing to GitHub Pages for free
 
-First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
-
-#### Options/configuration
-
-Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
-
-[...write these out...]
-
-#### Editing content
-
-Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
-
-### Publishing to GitHub Pages for free
-
-[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
-
-### Configuring with your own domain name
-
-To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
-
-### Themes
-
-Right now resume-template only has one theme. More are coming :soon: though. :heart:
-
-## Roadmap
-
-- [ ] Add print button/styles
-- [ ] Add PDF button/functionality
-- [ ] Add more theme styles
-- [ ] Add a "fork me on GitHub" thing
-- [ ] Finish docs
-- [ ] Cleanup CSS
-
-## Contributing
-
-If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
-
-1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
-2. Fork the project, make changes, and submit a pull request
+[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just
+make sure you're using a `gh-pages` branch, and the site will automatically be available at
+`yourusername.github.io/resume-template` (you can rename the repo to résumé for your own use if you
+want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it
+to be available at a custom domain.
 
 ## License
 
-The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
-
-Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.
+The code and styles are licensed under the [MIT License](LICENSE).
