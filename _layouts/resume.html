@@ -33,7 +33,7 @@
 
         <div class="executive-summary no-print" itemprop="description">
           <!-- This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S. -->
-          <p>{{ site.resume_description }}</p>
+          <p>{{ site.resume_summary }}</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -127,7 +127,7 @@
 
         {% for project in site.data.projects %}
         <h3 class="resume-item-title" itemprop="name"><a href="{{ project.url }}">{{ project.name }}</a></h3>
-        <h4 class="resume-item-details"> {{ project.role }} &bull; {{ project.start }} &mdash; {{ project.until }}</h3>
+        <h4 class="resume-item-details">{{ project.role }} &bull; {{ project.start }} &mdash; {{ project.until }}</h3>
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="{{ project.url }}">
           <p class="resume-item-copy">{{ project.summary }}</p>
         </div>
@@ -144,17 +144,15 @@
         </header>
 
         {% for timeline in site.data.presentations %}
-        <h3 class="resume-item-title" itemprop="name">{{ timeline.year }}</h3>
-        <div class="resume-item">
+        <h3 class="resume-item-title" itemprop="name"><small>{{ timeline.year }}</small></h3>
+        <ul class="resume-item-list">
           {% for paper in timeline.presentations %}
-          <div>
-            <p>
+          <li>
               {% if paper.invited %}<em>Invited:</em>{% endif %}
               {{ paper.authors }}. {{ paper.title }} {{ paper.conference }}. {{ paper.location }}: {{paper.date }}.
-            </p>
-          </div>
+          </li>
           {% endfor %}
-        </div>
+        </ul>
         {% endfor %}
 
         <p class="resume-item-copy"><sup>*</sup>Presenter's name is <u>underlined</u>.</p>
