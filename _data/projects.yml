@@ -6,6 +6,7 @@
   role: Co-Developer
   start: 2013
   until: Present
+  pitch: High-performance finite differencing code with MPI back-end in C++.
   summary: >
     MMSP is an open source library for phase-field and kinetic Monte Carlo simulations written in
     C++ with MPI. Invited to join project as co-developer based on contributed patches to eliminate
@@ -14,3 +15,19 @@
     and kinetic Monte Carlo research simulations on IBM Blue&nbsp;Gene/Q supercomputers with up to 4096
     cores. Implemented testing of proposed source code changes through automatic online continuous
     integration.
+
+- name: High Performance Computing for Boundary Value Problems
+  url: https://hiperc.readthedocs.io
+  nickname: HiPerC
+  role: Developer
+  start: 2018
+  until: Present
+  pitch: Comparative heat equation solvers using CUDA, OpenCL & OpenACC.
+
+- name: The Phase-Field Community Hub
+  url: https://pages.nist.gov/pfhub
+  nickname: PFHub
+  role: Developer
+  start: 2016
+  until: Present
+  pitch: Website for CHiMaD Phase-Field Benchmarks and educational materials.

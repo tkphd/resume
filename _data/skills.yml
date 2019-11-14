@@ -2,11 +2,11 @@
 
 - name: Scientific Computing
   skills:
+    - name: "Programming languages: C, C++, Python"
     - name: "Parallel programming: CUDA, OpenMP, MPI-2/MPI-IO, POSIX threads"
-    - name: "Debugging: gdb, gprof, Valgrind"
+    - name: "Tuning: gdb, gprof, Valgrind; nvprof, nvvp"
     - name: "Version control: git, GitHub, branching workflows"
     - name: "Data management: mdadm (RAID1, RAID5, RAID6), rdiff-backup, rsnapshot"
-    - name: "Cluster management: Ansible, Ganglia, NFS"
 
 - name: Experimental Techniques
   skills:

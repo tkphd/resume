@@ -1,14 +1,15 @@
 ---
 
 - name: Rensselaer Polytechnic Institute
+  location: Troy, NY
+  url: http://www.rpi.edu
   degrees:
   - name: Doctor of Philosophy
     field: Materials Engineering
-    location: Troy, NY
     department: Materials Science and Engineering Department
     url: http://mse.rpi.edu
-    start: 2011
-    until: 2015
+    start: September 2011
+    until: May 2015
     thesis: Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature
     summary: >
       Performed large-scale phase field simulations of normal isotropic grain growth on high
@@ -19,21 +20,18 @@
       simulated, and real metal microstructures.
   - name: Master of Science
     field: Materials Engineering
-    location: Troy, NY
     department: Materials Science and Engineering Department
     url: http://mse.rpi.edu
-    start: 2009
-    until: 2011
+    start: September 2009
+    until: May 2011
     thesis: Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution
     summary: >
       Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous
-      chemical reactor under various combinations of temperature, pH, reactant concentrations, and
-      flow rate. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice
+      chemical reactor. Found minor effects of Mg<sup>2+</sup> ions on ZnO film stress and lattice
       parameters.
   - name: Bachelor of Science
     field: Chemical Engineering
-    location: Troy, NY
     department: Chemical Engineering Department
     url: http://cbe.rpi.edu
-    start: 2002
-    until: 2006
+    start: September 2002
+    until: May 2006

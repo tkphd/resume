@@ -5,7 +5,7 @@
     - authors: >
         <u>T. Keller</u>, N. Ofori-Opoku, U. Kattner, K. Moon, M. Williams, G. Lindwall, and J. Guyer
       title: >
-        "Phase Field Study of a Ternary IN625 Analog."
+        Phase Field Study of a Ternary IN625 Analog.
       conference: MS&amp;T Annual Meeting
       location: Portland, OR
       date: October 2, 2019
@@ -15,7 +15,7 @@
     - authors: >
         <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
       title: >
-        "Abstraction, acceleration, and analysis: Integrating CALPHAD and phase-field models for AM superalloys."
+        Abstraction, acceleration, and analysis: Integrating CALPHAD and phase-field models for AM superalloys.
       conference: SIAM Conference on Mathematical Aspects of Materials Science
       location: Portland, OR
       date: July 9, 2018
@@ -24,14 +24,14 @@
     - authors: >
         <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
       title: >
-        "Reversion in ternary alloys using phase-field and CALPHAD methods."
+        Reversion in ternary alloys using phase-field and CALPHAD methods.
       conference: TMS Annual Meeting
       location: Phoenix, AZ
       date: March 20, 2018
 
     - authors: <u>T. Keller</u>
       title: >
-        "HiPerC: High performance computing strategies for boundary value problems."
+        HiPerC: High performance computing strategies for boundary value problems.
       conference: CHiMaD Phase Field Workshop VI
       location: Evanston, IL
       date: February 21, 2018
@@ -40,14 +40,14 @@
   presentations:
     - authors: <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
       title: >
-        "Pitfalls of modeling additively manufactured materials: Case study with Inconel 625."
+        Pitfalls of modeling additively manufactured materials: Case study with Inconel 625.
       conference: NIST MML MSED Bag Lunch
       location: Gaithersburg, MD
       date: October 11, 2017
 
     - authors: <u>T. Keller</u>
       title: >
-        "Mesoscale modeling of solid state reactions: Pathways toward microstructure design."
+        Mesoscale modeling of solid state reactions: Pathways toward microstructure design.
       conference: Lawrence Livermore National Laboratory
       location: Livermore, CA
       date: April 12, 2017
@@ -55,7 +55,7 @@
     - authors: >
         <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
       title: >
-        "Pitfalls of modeling additively manufactured materials: Case study with Inconel 625."
+        Pitfalls of modeling additively manufactured materials: Case study with Inconel 625.
       conference: TMS Annual Meeting
       location: San Diego, CA
       date: February 28, 2017
@@ -65,7 +65,7 @@
     - authors: >
         <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
       title: >
-        "Arresting deleterious particle growth in Inconel 625: Phase field model description."
+        Arresting deleterious particle growth in Inconel 625: Phase field model description.
       conference: MS&amp;T Annual Meeting
       location: Salt Lake City, UT
       date: October 27, 2016
@@ -75,7 +75,7 @@
     - authors: >
         <u>T. Keller</u>, B. Cutler, and D. Lewis
       title: >
-        "Finite grain boundary networks from phase-field grain growth data."
+        Finite grain boundary networks from phase-field grain growth data.
       conference: NIST Material Science &amp; Engineering Division
       location: Gaithersburg, MD
       date: December 8, 2014
@@ -83,7 +83,7 @@
     - authors: >
         T. Keller, B. Cutler, and <u>D. Lewis</u>
       title: >
-        "Comparative analysis of polycrystals in simulated &amp; experimental datasets."
+        Comparative analysis of polycrystals in simulated &amp; experimental datasets.
       conference: MS&amp;T Annual Meeting
       location: Pittsburgh, PA
       date: October 15, 2014
@@ -91,13 +91,13 @@
 
     - authors: T. Keller, D. Crist, <u>D. Lewis</u>, Y. Tan, K. Huang, and C. Li
       title: >
-        "Realtime prediction of grain growth during materials processing."
+        Realtime prediction of grain growth during materials processing.
       conference: PICS3
       location: Marseille, France
       date: May 2014
 
     - authors: <u>T. Keller</u> and D. Lewis
-      title: "Topological characterization of 3D microstructures with diffuse interfaces."
+      title: Topological characterization of 3D microstructures with diffuse interfaces.
       conference: TMS Annual Meeting
       location: San Diego, CA
       date: February 19, 2014
@@ -106,15 +106,15 @@
   presentations:
     - authors: <u>T. Keller</u>, D. Lewis, B. Cutler, and E. Lazar
       title: >
-        "Topological comparison of synthetic microstructures."
+        Topological comparison of synthetic microstructures.
       conference: MS&amp;T Annual Meeting
       location: Montreal, QC, Canada
       date: October 28, 2013
 
     - authors: >
-        T. Keller, <u>D. Lewis</u>, B. Cutler, B. Yener, S. Rock, G. Saunders, and M. Muench.
+        T. Keller, <u>D. Lewis</u>, B. Cutler, B. Yener, S. Rock, G. Saunders, and M. Muench
       title: >
-        "The topology of polycrystals."
+        The topology of polycrystals.
       conference: PICS3
       location: Marseille, France
       date: July 2013
@@ -124,7 +124,7 @@
     - authors: >
         <u>T. Keller</u>, B. Cutler, G. Yauney, and D. Lewis
       title: >
-        "Topological analysis of collapsing grains."
+        Topological analysis of collapsing grains.
       conference: MS&amp;T Annual Meeting
       location: Pittsburgh, PA
       date: October 10, 2012
@@ -132,7 +132,7 @@
     - authors: >
         T. Keller, B. Cutler, G. Yauney, and <u>D. Lewis</u>
       title: >
-        "Polyhedral graphs &amp; grain topology."
+        Polyhedral graphs &amp; grain topology.
       conference: International Conference on 3-Dimensional Materials Science (3DMS)
       location: Seven Springs, PA
       date: July 11, 2012

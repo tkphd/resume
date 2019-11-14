@@ -5,6 +5,7 @@ description: "Professional résumé and CV of Trevor Keller, Ph. D."
 
 # Build settings
 markdown: kramdown
+exclude: LaTeX
 sass:
   sass_dir: _sass
   style: compressed

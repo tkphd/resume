@@ -1,4 +1,8 @@
 _site
 .sass-cache
 .DS_Store
+*.#*
 *.directory
+LaTeX/*.aux
+LaTeX/*.log
+LaTeX/*.pdf

@@ -54,11 +54,11 @@
         {% for company in site.data.experience %}
 
         <h3 class="resume-item-title" itemprop="name"><a href="{{ company.home }}">{{ company.name }}</a></h3>
-        <h3 class="resume-item-title" itemprop="name"><small><a href="{{ company.url }}">{{ company.department }}</a></small></h3>
+        <h3 class="resume-item-title" itemprop="name"><small><a href="{{ company.url }}">{{ company.department }}</a> &bull; {{ company.location }} </small></h3>
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="{{ company.url }}">
           {% for position in company.positions %}
           <div>
-          <h4 class="resume-item-details" itemprop="description">{{ position.title }} &bull; {{ position.location }} &bull; {{ position.start }} &mdash; {{ position.until }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ position.title }} &bull; {{ position.start }} &mdash; {{ position.until }}</h4>
           {% if position.summary %}
           <p class="resume-item-copy">{{ position.summary }}</p>
           <p></p>
@@ -106,7 +106,7 @@
           {% for paper in site.data.publications %}
           <div>
             <p>
-              {{ paper.authors }} {{ paper.title }}{% if paper.proceedings %}In{% endif %} <em>{{ paper.journal }}</em>
+              {{ paper.authors }} "{{ paper.title }}" {% if paper.proceedings %}In{% endif %} <em>{{ paper.journal }}</em>
               {% if paper.volume %}<b>{{ paper.volume }}</b>{% endif %}
               ({% if paper.location %}{{ paper.location }}: {% endif %}{{ paper.year }}) {{ paper.pages }}.
               {% if paper.doi %}DOI: <a href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a>.{% endif %}
@@ -149,7 +149,7 @@
           {% for paper in timeline.presentations %}
           <li>
               {% if paper.invited %}<em>Invited:</em>{% endif %}
-              {{ paper.authors }}. {{ paper.title }} {{ paper.conference }}. {{ paper.location }}: {{paper.date }}.
+              {{ paper.authors }}. "{{ paper.title }}" {{ paper.conference }}. {{ paper.location }}: {{paper.date }}.
           </li>
           {% endfor %}
         </ul>

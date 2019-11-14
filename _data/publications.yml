@@ -1,7 +1,7 @@
 ---
 
 - title: >
-    "PFHub: The Phase-Field Community Hub."
+    PFHub: The Phase-Field Community Hub.
   authors: >
     D. Wheeler, T. Keller, S. DeWitt, A. Jokisaari, D. Schwen, J. Guyer, L. Aagesen, O. Heinonen, M. Tonks, P. Voorhees, and J. Warren.
   journal: Journal of Open Research Software
@@ -11,7 +11,7 @@
   doi: 10.5334/jors.276
 
 - title: >
-    "Application of finite element, phase-field, and CALPHAD-based methods to additive manufacturing of Ni alloys."
+    Application of finite element, phase-field, and CALPHAD-based methods to additive manufacturing of Ni alloys.
   authors: >
     T. Keller, G. Lindwall, S. Ghosh, L. Ma, B. Lane, F. Zhang, U. Kattner, J. Heigel, E. Lass, Y. Idell, M. Williams, A. Allen, J. Guyer, and L. Levine.
   journal: Acta Materialia
@@ -21,7 +21,7 @@
   doi: 10.1016/j.actamat.2017.05.003
 
 - title: >
-    "Comparative grain topology."
+    Comparative grain topology.
   authors: T. Keller, B. Cutler, E. Lazar, and D. Lewis.
   journal: Acta Materialia
   volume: 66
@@ -30,11 +30,11 @@
   doi: 10.1016/j.actamat.2013.11.039
 
 - title: >
-    "Enumeration of polyhedra for grain growth analysis."
+    Enumeration of polyhedra for grain growth analysis.
   authors: T. Keller, B. Cutler, M. Glicksman, and D. Lewis.
   proceedings: true
   journal: Proceedings of the First International Conference on 3D Materials Science
   location: Seven Springs, PA
-  year: July 8&mdash;12, 2012
+  year: 2012
   pages: 97&mdash;106
   doi: 10.1007/978-3-319-48762-5_15
