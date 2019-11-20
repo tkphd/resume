@@ -4,5 +4,7 @@ _site
 *.#*
 *.directory
 LaTeX/*.aux
+LaTeX/*.fdb_latexmk
+LaTeX/*.fls
 LaTeX/*.log
 LaTeX/*.pdf
