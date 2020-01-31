@@ -1,5 +1,16 @@
 ---
 
+- year: 2020
+  presentations:
+    - authors: >
+        <u>T. Keller</u>
+      title: >
+        Modeling additively manufactured superalloy microstructures.
+      conference: NIMS-SIP International Additive Manufacturing Workshop
+      location: Tsukuba, Ibaraki, Japan
+      date: January 29, 2020
+      invited: true
+
 - year: 2019
   presentations:
     - authors: >

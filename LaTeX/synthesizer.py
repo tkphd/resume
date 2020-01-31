@@ -63,6 +63,8 @@ with open("TKellerPhD.tex", "w") as resume:
         pre_data = yaml_load(pre_yaml)
         for talks in pre_data:
             for talk in talks["presentations"]:
+                if "invited" in talk:
+                    resume.write("Invited: ")
                 resume.write(str(talk["authors"]).rstrip().replace("<u>", "\\emph{").replace("</u>", "}") + ". ``" + str(talk["title"]).replace(".", ".''").replace("&amp;", "\&")  + " " + str(talk["conference"]).replace("&amp;", "\&") + ". " + talk["location"] + ": " + talk["date"] + ".\\\\[0.25\\baselineskip]\n");
             resume.write("\\vskip-2\\baselineskip\n")
 
