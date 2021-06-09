@@ -1,6 +1,8 @@
+all: TKellerPhD.tex TKellerPhD.pdf
+.PHONY: TKellerPhD.tex
+
 TKellerPhD.pdf: TKellerPhD.tex
 	latexmk -pdf $<
 
-.PHONY: TKellerPhD.tex
-TKellerPhD.tex: synthesizer.py header.tex footer.tex
+TKellerPhD.tex: synthesizer.py header.tex footer.tex ../_config.yml
 	python synthesizer.py

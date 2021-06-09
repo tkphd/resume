@@ -1,5 +1,4 @@
 ---
-
 - name: National Institute of Standards and Technology
   home: https://www.nist.gov
   department: Materials Science and Engineering Division
@@ -10,19 +9,24 @@
       start: July 2017
       until: Present
       summary: >
-        Developing thermodynamic and kinetic models of precipitate particle evolution and
-        equilibrium in ternary alloys analogous to nickel-based superalloys.
+        Extended phase-field model of Inconel 625 with more thermodynamically-consistent diffusion
+        parameters while overhauling mathematical framework. Monitored, maintained, and upgraded
+        shared computer hardware in the Center for Theoretical and Computational Materials Science;
+        helped to address user concerns by building updated software versions and exploring
+        filesystem upgrades to alleviate resource contention. Developed training materials through High
+        Performance Computing Carpentry, created user-editable Wiki pages for CTCMS and Enki
+        clusters, and documented major cluster features and common workflows for each. 
     - title: NRC Postdoctoral Associate
       start: July 2015
       until: June 2017
       summary: >
-        Implemented phase field model for solid-state transformation in alloy systems with three
+        Implemented phase-field model for solid-state transformation in alloy systems with three
         components and four phases, analogous to Inconel 625. Designed initial conditions based on
         electron micrographs of additively manufactured Inconel 625 to simulate microstructure
         evolution during heat treatment. Produced thermodynamic models through simplification of
         quantitative CALPHAD databases while retaining key phase diagram features, using computer
         algebra systems to accurately generate expressions and multivariable derivatives for import
-        into phase field software.
+        into phase-field software.
   
 - name: Veeco Instruments
   home: https://www.veeco.com
@@ -35,9 +39,9 @@
       start: July 2009
       until: August 2011
       summary: >
-        Part-time during master's degree. Researched non-toxic alternatives
-        to CdS, reporting to senior management. Traveled to Helsinki
-        to evaluate state-of-the-art atomic layer deposition reactor.
+        Part-time during master's degree. Researched non-toxic alternatives to CdS, reporting to
+        senior management. Traveled to Helsinki to evaluate state-of-the-art atomic layer
+        deposition reactor.
 
 - name: DayStar Technologies
   url: https://web.archive.org/web/20090209214859/http://daystartech.com/

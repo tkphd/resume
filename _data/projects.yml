@@ -1,28 +1,26 @@
 ---
 
-- name: Mesoscale Microstructure Simulation Project
-  url: https://github.com/mesoscale/mmsp
-  nickname: MMSP
-  role: Co-Developer
-  start: 2013
+- name: High Performance Computing Carpentry
+  url: http://www.hpc-carpentry.org
+  nickname: HPC Carpentry
+  role: Steering Committee Member
+  start: 2019
   until: Present
-  pitch: High-performance finite differencing code with MPI back-end in C++.
   summary: >
-    MMSP is an open source library for phase-field and kinetic Monte Carlo simulations written in
-    C++ with MPI. Invited to join project as co-developer based on contributed patches to eliminate
-    memory leaks and resolve race conditions in parallel computing environments. Eliminated
-    corruption in parallel I/O on large-block filesystems, enabling clean execution of phase field
-    and kinetic Monte Carlo research simulations on IBM Blue&nbsp;Gene/Q supercomputers with up to 4096
-    cores. Implemented testing of proposed source code changes through automatic online continuous
-    integration.
+    Global community of researchers building courses to teach new users foundational skills in
+    high-performance computational science. Focused on organizing and coordinating discussions
+    and contributions, helping the community grow and driving major curriculum improvements.
 
 - name: High Performance Computing for Boundary Value Problems
   url: https://hiperc.readthedocs.io
   nickname: HiPerC
-  role: Developer
+  role: Creator
   start: 2018
   until: Present
-  pitch: Comparative heat equation solvers using CUDA, OpenCL & OpenACC.
+  summary: >
+    Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card computing frameworks
+    solving a canonical diffusion problem. Carefully documented to help fellow materials scientists
+    learn how to use these ubiquitous high-performance resources.
 
 - name: The Phase-Field Community Hub
   url: https://pages.nist.gov/pfhub
@@ -30,4 +28,17 @@
   role: Developer
   start: 2016
   until: Present
-  pitch: Website for CHiMaD Phase-Field Benchmarks and educational materials.
+  summary: >
+    International community of phase-field researchers developing benchmarks and educational
+    materials. Focused on website back-end development and content creation.
+
+- name: Mesoscale Microstructure Simulation Project
+  url: https://github.com/mesoscale/mmsp
+  nickname: MMSP
+  role: Developer
+  start: 2013
+  until: Present
+  summary: >
+    Open source high-performance phase-field code with a parallel distributed-memory back-end
+    written in C++. Eliminated memory leaks and race conditions in massively parallel computing
+    environments.

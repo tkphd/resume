@@ -1,6 +1,6 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-\usepackage{fancyhdr,hyperref,graphicx,enumitem,textcomp}
+\usepackage{contour,enumitem,fancyhdr,hyperref,graphicx,textcomp,ulem}
 \hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=black}
 
 \resumewidth=6.7in
@@ -15,6 +15,15 @@
 \rhead{}
 \cfoot{}
 \renewcommand{\headrulewidth}{0pt}
+
+% Create an underline style that steps around descenders
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\gapuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
 
 \frenchspacing
 \begin{document}

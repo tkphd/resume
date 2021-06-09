@@ -1,17 +1,13 @@
 ---
-
 - name: Scientific Computing
   skills:
-    - name: "Programming languages: C, C++, Python"
-    - name: "Parallel programming: CUDA, OpenMP, MPI-2/MPI-IO, POSIX threads"
-    - name: "Tuning: gdb, gprof, Valgrind; nvprof, nvvp"
-    - name: "Version control: git, GitHub, branching workflows"
-    - name: "Data management: mdadm (RAID1, RAID5, RAID6), rdiff-backup, rsnapshot"
+    - name: "Teaching as a Carpentries Instructor: Python, Unix Shell, Version Control."
+    - name: "Programming languages: C, C++, Python, shell (bash); CUDA, MPI-2/MPI-IO, OpenMP."
 
 - name: Experimental Techniques
   skills:
-    - name: "Metallographic polishing and etching: Fe-, Cr-, Cu-, Zn-, and Ni-based alloys"
-    - name: "Scanning electron microscopy (SEM) of inorganic specimens"
-    - name: "X-ray diffractometry"
-    - name: "UV-visible light spectrophotometry"
-    - name: "Contact profilometry of thin films"
+    - name: "Metallographic polishing and etching: Fe, Cr, Cu, Ni, Ti, and Zn alloys"
+    - name: "Scanning electron microscopy (SEM) of metal and semiconductor specimens"
+    - name: "X-ray diffractometry of semiconducting thin films"
+    - name: "UV-visible light spectrophotometry of semiconducting thin films"
+    - name: "Contact profilometry of metal, metalloid, and semiconductor thin films"
