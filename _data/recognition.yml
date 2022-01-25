@@ -1,19 +1,38 @@
 ---
 
-- name: NIST Material Measurement Laboratory
+- name: Department of Commerce
   awards:
-    - name: MML Accolade
+    - name: Bronze Medal Award
+      date: 2021
+      url: https://www.nist.gov/nist-awards/2021-bronze-medal-award-daniel-wheeler-trevor-keller-jonathan-guyer-james-warren
+      summary: >
+        "The group is recognized for leading a stakeholder community to
+        establish benchmarks for evaluating and validating phase field
+        simulation software useful to the design and manufacture of advanced
+        materials. The group convened and led 10 workshops since 2015 to
+        establish eight distinct benchmark challenges, and to determine
+        stakeholder needs for a benchmark repository and database. The
+        resulting digital infrastructure that the group built, PFHub, is used
+        by scientists worldwide and is broadly recognized as the world’s
+        authoritative resource for validating phase field simulation software
+        and results."
+
+- name: National Institute of Standards and Technology
+  awards:
+    - name: Material Measurement Laboratory Accolade
       date: 2018
       url: https://www.nist.gov/mml/mml-accolades/2018-accolades/technical-excellence-2018
       summary: >
-        Nominated by multiple colleagues, "For exceptional contribution to the field of metal
-        additive manufacturing with a focus on developing integrated simulation methods to predict
-        microstructure evolution based on phase-field models, computational thermodynamics, and
-        finite element analysis."
+        "For exceptional contribution to the field of metal additive
+        manufacturing with a focus on developing integrated simulation methods
+        to predict microstructure evolution based on phase-field models,
+        computational thermodynamics, and finite element analysis."
 
 - name: <em>Acta Materialia</em> and <em>Scripta Materialia</em>
   awards:
     - name: Outstanding Reviewer Award
       date: 2018
+      url: https://doi.org/10.1016/j.actamat.2019.04.059
     - name: Outstanding Reviewer Award
       date: 2017
+      url: https://doi.org/10.1016/j.actamat.2018.05.001

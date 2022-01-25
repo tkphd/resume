@@ -1,20 +1,14 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-\usepackage{contour,enumitem,fancyhdr,hyperref,graphicx,textcomp,ulem}
-\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=black}
+\usepackage{contour,enumitem,hyperref,graphicx,textcomp,ulem,xcolor}
+\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue!10!black}
 
 \resumewidth=6.7in
 \newsectionwidth{22mm}
-\newcommand{\myheader}{\moveleft.5\hoffset\centerline{\Large\bf Trevor~Keller,~Ph. D.}\smallskip\moveleft.5\hoffset
-\centerline{12648 Grey Eagle Court \textnumero\,34 $\star$ Germantown, Maryland 20874 $\star$ \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com} $\star$ (518) 364-9282 }
-}
 
-\pagestyle{fancy}
-\lhead{}
-\chead{\myheader}
-\rhead{}
-\cfoot{}
-\renewcommand{\headrulewidth}{0pt}
+\name{Trevor~Keller,~Ph.\,D.}
+\address{12648 Grey Eagle Court \textnumero\,34 $\star$ Germantown, Maryland 20874 $\star$
+     \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com} $\star$ (518) 364-9282}
 
 % Create an underline style that steps around descenders
 \renewcommand{\ULdepth}{1.8pt}
@@ -27,47 +21,47 @@
 
 \frenchspacing
 \begin{document}
-\begin{resume}
-\vskip2\baselineskip
-\section{Experience}
-{\bf \href{https://www.nist.gov}{National Institute of Standards and Technology}}\\
- \rightline{\href{https://www.nist.gov/mml/materials-science-and-engineering-division}{Materials Science and Engineering Division, Gaithersburg, MD}}\\
- \textit{Research Staff} \hfill July 2017 to Present\\
- [0.25\baselineskip]
+\begin{resume}\section{Experience}
+{\bf \href{https://www.nist.gov}{National Institute of Standards and Technology}}\\[0.25\baselineskip]
+\rightline{\href{https://www.nist.gov/mml/materials-science-and-engineering-division}{Materials Science and Engineering Division, Gaithersburg, MD}}\\
+\textit{Research Staff} \hfill July 2017 to Present\\
 Extended phase-field model of Inconel 625 with more thermodynamically-consistent diffusion parameters while overhauling mathematical framework. Monitored, maintained, and upgraded shared computer hardware in the Center for Theoretical and Computational Materials Science; helped to address user concerns by building updated software versions and exploring filesystem upgrades to alleviate resource contention. Developed training materials through High Performance Computing Carpentry, created user-editable Wiki pages for CTCMS and Enki clusters, and documented major cluster features and common workflows for each. 
 
- \textit{NRC Postdoctoral Associate} \hfill July 2015 to June 2017\\
- [0.25\baselineskip]
+
+\textit{NRC Postdoctoral Associate} \hfill July 2015 to June 2017\\
 Implemented phase-field model for solid-state transformation in alloy systems with three components and four phases, analogous to Inconel 625. Designed initial conditions based on electron micrographs of additively manufactured Inconel 625 to simulate microstructure evolution during heat treatment. Produced thermodynamic models through simplification of quantitative CALPHAD databases while retaining key phase diagram features, using computer algebra systems to accurately generate expressions and multivariable derivatives for import into phase-field software.
 
- {\bf \href{https://www.veeco.com}{Veeco Instruments}}\hfill \href{https://www.veeco.com/company/news/veeco-establishes-solar-process-development-center}{Solar Process Development Center, Clifton Park, NY}\\
- \textit{Process Engineer} \hfill July 2009 to August 2011\\
- [0.25\baselineskip]
+
+{\bf \href{https://www.veeco.com}{Veeco Instruments}}\hfill \href{https://www.veeco.com/company/news/veeco-establishes-solar-process-development-center}{Solar Process Development Center, Clifton Park, NY}\\
+\textit{Process Engineer} \hfill July 2009 to August 2011\\
 Part-time during master's degree. Researched non-toxic alternatives to CdS, reporting to senior management. Traveled to Helsinki to evaluate state-of-the-art atomic layer deposition reactor.
 
- {\bf \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{DayStar Technologies}}\hfill \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{Materials Development Group, Clifton Park, NY}\\
- \textit{Process Engineer} \hfill January 2009 to June 2009\\
- \textit{Process Technician} \hfill July 2006 to December 2008\\
- [0.25\baselineskip]
+
+{\bf \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{DayStar Technologies}}\hfill \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{Materials Development Group, Clifton Park, NY}\\
+\textit{Process Engineer} \hfill January 2009 to June 2009\\
+\textit{Process Technician} \hfill July 2006 to December 2008\\
 Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic materials and novel reactor geometries. Achieved 72$\times$ scaleup in CdS deposition area with only 6$\times$ increase in waste generation.
 
- \section{Education}
- {\bf \href{http://www.rpi.edu}{Rensselaer Polytechnic Institute}} \hfill Troy, NY\\
- \textit{Doctor of Philosophy} in Materials Engineering\hfill September 2011 to May 2015\\
- Thesis: \gapuline{Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature}\\
- [0.25\baselineskip]
+
+\section{Education}
+{\bf \href{http://www.rpi.edu}{Rensselaer Polytechnic Institute}} \hfill Troy, NY\\[0.25\baselineskip]
+\textit{Doctor of Philosophy} in Materials Engineering\hfill September 2011 to May 2015\\
+Thesis: \gapuline{Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature}\\[0.25\baselineskip]
 Performed large-scale phase field simulations of normal isotropic grain growth on high performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices) from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face elimination responsible for biasing topology in populations of polyhedral grains in synthetic, simulated, and real metal microstructures.
 
- \textit{Master of Science} in Materials Engineering\hfill September 2009 to May 2011\\
- Thesis: \gapuline{Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution}\\
- [0.25\baselineskip]
+
+\textit{Master of Science} in Materials Engineering\hfill September 2009 to May 2011\\
+Thesis: \gapuline{Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution}\\[0.25\baselineskip]
 Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous chemical reactor. Found minor effects of Mg$^{2+}$ ions on ZnO film stress and lattice parameters.
 
- \textit{Bachelor of Science} in Chemical Engineering\hfill September 2002 to May 2006\\
- \section{Skills}
-Teaching as a Carpentries Instructor: Python, Unix Shell, Version Control.\\
-Programming languages: C, C++, Python, shell (bash); CUDA, MPI-2/MPI-IO, OpenMP.\\
-\section{Publications}
+
+\textit{Bachelor of Science} in Chemical Engineering\hfill September 2002 to May 2006\\
+
+
+\section{Skills}
+Teaching as a Carpentries Instructor: Python, Unix Shell, Version Control.\\[0.25\baselineskip]
+Programming languages: C, C++, Python, shell (bash); CUDA, MPI-2/MPI-IO, OpenMP.\\[0.25\baselineskip]
+\end{resume}\newpage\begin{resume}\section{Publications}
 D. Wheeler, T. Keller, S. DeWitt, A. Jokisaari, D. Schwen, J. Guyer, L. Aagesen, O. Heinonen, M. Tonks, P. Voorhees, and J. Warren.
  ``PFHub: The Phase-Field Community Hub.''
  \textit{Journal of Open Research Software} {\bf 7} (2019) 29. DOI: \href{https://doi.org/10.5334/jors.276}{10.5334/jors.276}\\[0.25\baselineskip]
@@ -78,62 +72,67 @@ T. Keller, B. Cutler, E. Lazar, and D. Lewis. ``Comparative grain topology.''
  \textit{Acta Materialia} {\bf 66} (2014) 414--423. DOI: \href{https://doi.org/10.1016/j.actamat.2013.11.039}{10.1016/j.actamat.2013.11.039}\\[0.25\baselineskip]
 T. Keller, B. Cutler, M. Glicksman, and D. Lewis. ``Enumeration of polyhedra for grain growth analysis.''
  \textit{Proceedings of the First International Conference on 3D Materials Science} (2012) 97--106. DOI: \href{https://doi.org/10.1007/978-3-319-48762-5_15}{10.1007/978-3-319-48762-5\_15}\\[0.25\baselineskip]
+
+\section{Recognition}
+{\bf Department of Commerce}\\[0.25\baselineskip]
+\href{https://www.nist.gov/nist-awards/2021-bronze-medal-award-daniel-wheeler-trevor-keller-jonathan-guyer-james-warren}{\textit{Bronze Medal Award}} \hfill 2021\\
+``The group is recognized for leading a stakeholder community to establish benchmarks for evaluating and validating phase field simulation software useful to the design and manufacture of advanced materials. The group convened and led 10 workshops since 2015 to establish eight distinct benchmark challenges, and to determine stakeholder needs for a benchmark repository and database. The resulting digital infrastructure that the group built, PFHub, is used by scientists worldwide and is broadly recognized as the world’s authoritative resource for validating phase field simulation software and results.''
+
+
+{\bf National Institute of Standards and Technology}\\[0.25\baselineskip]
+\href{https://www.nist.gov/mml/mml-accolades/2018-accolades/technical-excellence-2018}{\textit{Material Measurement Laboratory Accolade}} \hfill 2018\\
+``For exceptional contribution to the field of metal additive manufacturing with a focus on developing integrated simulation methods to predict microstructure evolution based on phase-field models, computational thermodynamics, and finite element analysis.''
+
+
+{\bf \textit{Acta Materialia} and \textit{Scripta Materialia}}\\[0.25\baselineskip]
+\href{https://doi.org/10.1016/j.actamat.2019.04.059}{\textit{Outstanding Reviewer Award}} \hfill 2018\\[0.25\baselineskip]
+\href{https://doi.org/10.1016/j.actamat.2018.05.001}{\textit{Outstanding Reviewer Award}} \hfill 2017
+
 \section{Projects}
 \textit{Steering Committee Member}, \href{http://www.hpc-carpentry.org}{High Performance Computing Carpentry}\hfill 2019 to Present\\
- Global community of researchers building courses to teach new users foundational skills in high-performance computational science. Focused on organizing and coordinating discussions and contributions, helping the community grow and driving major curriculum improvements.
+Global community of researchers building courses to teach new users foundational skills in high-performance computational science. Focused on organizing and coordinating discussions and contributions, helping the community grow and driving major curriculum improvements.
 \\[0.25\baselineskip]
 \textit{Creator}, \href{https://hiperc.readthedocs.io}{High Performance Computing for Boundary Value Problems}\hfill 2018 to Present\\
- Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card computing frameworks solving a canonical diffusion problem. Carefully documented to help fellow materials scientists learn how to use these ubiquitous high-performance resources.
+Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card computing frameworks solving a canonical diffusion problem. Carefully documented to help fellow materials scientists learn how to use these ubiquitous high-performance resources.
 \\[0.25\baselineskip]
 \textit{Developer}, \href{https://pages.nist.gov/pfhub}{The Phase-Field Community Hub}\hfill 2016 to Present\\
- International community of phase-field researchers developing benchmarks and educational materials. Focused on website back-end development and content creation.
+International community of phase-field researchers developing benchmarks and educational materials. Focused on website back-end development and content creation.
 \\[0.25\baselineskip]
 \textit{Developer}, \href{https://github.com/mesoscale/mmsp}{Mesoscale Microstructure Simulation Project}\hfill 2013 to Present\\
- Open source high-performance phase-field code with a parallel distributed-memory back-end written in C++. Eliminated memory leaks and race conditions in massively parallel computing environments.
+Open source high-performance phase-field code with a parallel distributed-memory back-end written in C++. Eliminated memory leaks and race conditions in massively parallel computing environments.
 \\[0.25\baselineskip]
-\section{Presentations}
-Invited: \textit{T. Keller}. ``Modeling additively manufactured superalloy microstructures.''
+\end{resume}\newpage\begin{resume}\section{Presentations}
+{\bf Invited:} \textit{T. Keller}. ``Modeling additively manufactured superalloy microstructures.''
  NIMS-SIP International Additive Manufacturing Workshop. Tsukuba, Ibaraki, Japan: January 29, 2020.\\[0.25\baselineskip]
-\vskip-2\baselineskip
 \textit{T. Keller}, N. Ofori-Opoku, U. Kattner, K. Moon, M. Williams, G. Lindwall, and J. Guyer. ``Phase Field Study of a Ternary IN625 Analog.''
  MS\&T Annual Meeting. Portland, OR: October 2, 2019.\\[0.25\baselineskip]
-\vskip-2\baselineskip
-Invited: \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Abstraction, acceleration, and analysis: Integrating CALPHAD and phase-field models for AM superalloys.''
+{\bf Invited:} \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Abstraction, acceleration, and analysis: Integrating CALPHAD and phase-field models for AM superalloys.''
  SIAM Conference on Mathematical Aspects of Materials Science. Portland, OR: July 9, 2018.\\[0.25\baselineskip]
 \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Reversion in ternary alloys using phase-field and CALPHAD methods.''
  TMS Annual Meeting. Phoenix, AZ: March 20, 2018.\\[0.25\baselineskip]
 \textit{T. Keller}. ``HiPerC: High performance computing strategies for boundary value problems.''
  CHiMaD Phase Field Workshop VI. Evanston, IL: February 21, 2018.\\[0.25\baselineskip]
-\vskip-2\baselineskip
 \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Pitfalls of modeling additively manufactured materials: Case study with Inconel 625.''
  NIST MML MSED Bag Lunch. Gaithersburg, MD: October 11, 2017.\\[0.25\baselineskip]
-\textit{T. Keller}. ``Mesoscale modeling of solid state reactions: Pathways toward microstructure design.''
+{\bf Invited:} \textit{T. Keller}. ``Mesoscale modeling of solid state reactions: Pathways toward microstructure design.''
  Lawrence Livermore National Laboratory. Livermore, CA: April 12, 2017.\\[0.25\baselineskip]
 \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Pitfalls of modeling additively manufactured materials: Case study with Inconel 625.''
  TMS Annual Meeting. San Diego, CA: February 28, 2017.\\[0.25\baselineskip]
-\vskip-2\baselineskip
 \textit{T. Keller}, G. Lindwall, U. Kattner, and J. Guyer. ``Arresting deleterious particle growth in Inconel 625: Phase field model description.''
  MS\&T Annual Meeting. Salt Lake City, UT: October 27, 2016.\\[0.25\baselineskip]
-\vskip-2\baselineskip
-\textit{T. Keller}, B. Cutler, and D. Lewis. ``Finite grain boundary networks from phase-field grain growth data.''
+{\bf Invited:} \textit{T. Keller}, B. Cutler, and D. Lewis. ``Finite grain boundary networks from phase-field grain growth data.''
  NIST Material Science \& Engineering Division. Gaithersburg, MD: December 8, 2014.\\[0.25\baselineskip]
-Invited: T. Keller, B. Cutler, and \textit{D. Lewis}. ``Comparative analysis of polycrystals in simulated \& experimental datasets.''
+{\bf Invited:} T. Keller, B. Cutler, and \textit{D. Lewis}. ``Comparative analysis of polycrystals in simulated \& experimental datasets.''
  MS\&T Annual Meeting. Pittsburgh, PA: October 15, 2014.\\[0.25\baselineskip]
 T. Keller, D. Crist, \textit{D. Lewis}, Y. Tan, K. Huang, and C. Li. ``Realtime prediction of grain growth during materials processing.''
  PICS3. Marseille, France: May 2014.\\[0.25\baselineskip]
 \textit{T. Keller} and D. Lewis. ``Topological characterization of 3D microstructures with diffuse interfaces.'' TMS Annual Meeting. San Diego, CA: February 19, 2014.\\[0.25\baselineskip]
-\vskip-2\baselineskip
 \textit{T. Keller}, D. Lewis, B. Cutler, and E. Lazar. ``Topological comparison of synthetic microstructures.''
  MS\&T Annual Meeting. Montreal, QC, Canada: October 28, 2013.\\[0.25\baselineskip]
 T. Keller, \textit{D. Lewis}, B. Cutler, B. Yener, S. Rock, G. Saunders, and M. Muench. ``The topology of polycrystals.''
  PICS3. Marseille, France: July 2013.\\[0.25\baselineskip]
-\vskip-2\baselineskip
 \textit{T. Keller}, B. Cutler, G. Yauney, and D. Lewis. ``Topological analysis of collapsing grains.''
  MS\&T Annual Meeting. Pittsburgh, PA: October 10, 2012.\\[0.25\baselineskip]
 T. Keller, B. Cutler, G. Yauney, and \textit{D. Lewis}. ``Polyhedral graphs \& grain topology.''
  International Conference on 3-Dimensional Materials Science (3DMS). Seven Springs, PA: July 11, 2012.\\[0.25\baselineskip]
-\vskip-2\baselineskip
-
-
-\end{resume}
-\end{document}
+\end{resume}\end{document}

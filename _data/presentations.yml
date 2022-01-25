@@ -62,6 +62,7 @@
       conference: Lawrence Livermore National Laboratory
       location: Livermore, CA
       date: April 12, 2017
+      invited: true
 
     - authors: >
         <u>T. Keller</u>, G. Lindwall, U. Kattner, and J. Guyer
@@ -90,6 +91,7 @@
       conference: NIST Material Science &amp; Engineering Division
       location: Gaithersburg, MD
       date: December 8, 2014
+      invited: true
 
     - authors: >
         T. Keller, B. Cutler, and <u>D. Lewis</u>

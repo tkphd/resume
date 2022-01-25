@@ -1,20 +1,14 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-\usepackage{contour,enumitem,fancyhdr,hyperref,graphicx,textcomp,ulem}
-\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=black}
+\usepackage{contour,enumitem,hyperref,graphicx,textcomp,ulem,xcolor}
+\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue!10!black}
 
 \resumewidth=6.7in
 \newsectionwidth{22mm}
-\newcommand{\myheader}{\moveleft.5\hoffset\centerline{\Large\bf Trevor~Keller,~Ph. D.}\smallskip\moveleft.5\hoffset
-\centerline{12648 Grey Eagle Court \textnumero\,34 $\star$ Germantown, Maryland 20874 $\star$ \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com} $\star$ (518) 364-9282 }
-}
 
-\pagestyle{fancy}
-\lhead{}
-\chead{\myheader}
-\rhead{}
-\cfoot{}
-\renewcommand{\headrulewidth}{0pt}
+\name{Trevor~Keller,~Ph.\,D.}
+\address{12648 Grey Eagle Court \textnumero\,34 $\star$ Germantown, Maryland 20874 $\star$
+     \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com} $\star$ (518) 364-9282}
 
 % Create an underline style that steps around descenders
 \renewcommand{\ULdepth}{1.8pt}
@@ -27,5 +21,3 @@
 
 \frenchspacing
 \begin{document}
-\begin{resume}
-\vskip2\baselineskip
