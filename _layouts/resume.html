@@ -118,6 +118,34 @@
       </section>
       {% endif %}
 
+      {% if site.resume_section_recognition %}
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Recognition</h2>
+        </header>
+
+        {% for organization in site.data.recognition %}
+        <h3 class="resume-item-title" itemprop="award">{{ organization.name }}</h3>
+        <div class="resume-item">
+          {% for award in organization.awards %}
+          <div>
+            {% if award.url %}
+            <h4 class="resume-item-details"><a href="{{ award.url }}">{{ award.name }}</a> &bull; {{ award.date }}</h4>
+            {% else %}
+            <h4 class="resume-item-details">{{ award.name }} &bull; {{ award.date }}</h4>
+            {% endif %}
+            {% if award.summary %}
+            <p>{{ award.summary }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+        </div>
+        {% endfor %}
+
+      </section>
+      {% endif %}
+
       {% if site.resume_section_projects %}
       <section class="content-section">
 
@@ -148,7 +176,7 @@
         <ul class="resume-item-list">
           {% for paper in timeline.presentations %}
           <li>
-              {% if paper.invited %}<em>Invited:</em>{% endif %}
+              {% if paper.invited %}<b>Invited:</b>{% endif %}
               {{ paper.authors }}. "{{ paper.title }}" {{ paper.conference }}. {{ paper.location }}: {{paper.date }}.
           </li>
           {% endfor %}
@@ -176,31 +204,6 @@
 
       </section>
       {% endif %}
-
-      {% if site.resume_section_recognition %}
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        {% for organization in site.data.recognition %}
-        <h3 class="resume-item-title" itemprop="award">{{ organization.name }}</h3>
-        <div class="resume-item">
-          {% for award in organization.awards %}
-          <div>
-            <h4 class="resume-item-details">{{ award.name }} &bull; {{ award.date }}</h4>
-            {% if award.summary %}
-            <p>{{ award.summary }}</p>
-            {% endif %}
-          </div>
-        {% endfor %}
-        </div>
-        {% endfor %}
-
-      </section>
-      {% endif %}
-
 
       {% if site.resume_section_skills %}
       <section class="content-section">
