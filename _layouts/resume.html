@@ -83,7 +83,7 @@
         <h3 class="resume-item-title" itemprop="name">{{ school.name }}</h3>
         {% for degree in school.degrees %}
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="{{ degree.url }}">
-          <h4 class="resume-item-details" itemprop="description">{{ degree.name }}, <a href="{{ degree.url }}">{{ degree.field }}</a> &bull; {{ degree.location }} &bull; {{ degree.start }} &mdash; {{ degree.until }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ degree.name }}, <a href="{{ degree.url }}">{{ degree.field }}</a> &bull; {{ school.location }} &bull; {{ degree.start }} &mdash; {{ degree.until }}</h4>
           {% if degree.thesis %}
           <p class="resume-item-copy"><i>Thesis:</i> "{{ degree.thesis }}"</p>
           {% endif %}
