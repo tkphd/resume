@@ -1,5 +1,15 @@
 ---
 
+- title: >-
+    HPC Carpentry: A scalable, peer-reviewed training program to democratize HPC access.
+  authors: >-
+    A. Reid, A. O'Cais, T. Keller, W. Purwanto, and A. Alim Rasel.
+  journal: Journal of Computational Science Education
+  volume: 15
+  year: 2024
+  pages: 32&mdash;34
+  doi: 10.22369/issn.2153-4136/15/1/6
+
 - title: >
     PFHub: The Phase-Field Community Hub.
   authors: >
