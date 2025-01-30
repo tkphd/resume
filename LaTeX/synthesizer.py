@@ -57,7 +57,7 @@ with open("TKellerPhD.tex", "w") as resume:
                     resume.write(str(skills["name"]) + midskip)
 
     resume.write("\\end{resume}")
-    resume.write("\\newpage")
+    # resume.write("\\newpage")
     resume.write("\\begin{resume}")
 
     with open("../_data/publications.yml") as pub_yaml:

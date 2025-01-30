@@ -40,5 +40,5 @@
   until: Present
   summary: >
     Open source high-performance phase-field code with a parallel distributed-memory back-end
-    written in C++. Eliminated memory leaks and race conditions in massively parallel computing
+    written in C++. Eliminated memory leaks and race conditions in parallel computing
     environments.
