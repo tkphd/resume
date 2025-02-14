@@ -45,7 +45,7 @@ resume_social_links:
   resume_github_url:         "https://github.com/tkphd"
   resume_orcid_url:          "https://orcid.org/0000-0002-2920-8302"
   resume_website_url:        "http://www.trevorkeller.com"
-  resume_twitter_url:        "http://twitter.com/tkphd"
+  # resume_twitter_url:        "http://twitter.com/tkphd"
   resume_scholar_url:        "https://scholar.google.com/citations?user=pHf0ImgAAAAJ&hl=en&oi=ao"
   resume_linkedin_url:       "https://www.linkedin.com/in/trevor-keller-a8610ba"
 resume_print_social_links:   true
