@@ -1,7 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
 \usepackage{contour,enumitem,hyperref,graphicx,textcomp,ulem,xcolor}
-\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue!10!black}
+\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue}
 
 \resumewidth=6.7in
 \newsectionwidth{22mm}
@@ -18,6 +18,6 @@
   \uline{\phantom{#1}}%
   \llap{\contour{white}{#1}}%
 }
-
+\renewcommand{\labelitemi}{$\circ$}
 \frenchspacing
 \begin{document}

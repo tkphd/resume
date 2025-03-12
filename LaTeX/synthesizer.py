@@ -1,4 +1,4 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from yaml import load as yaml_load
 from yaml import Loader as yaml_loader
@@ -15,47 +15,95 @@ with open("TKellerPhD.tex", "w") as resume:
     resume.write("\\begin{resume}")
 
     with open("../_data/objective.yml") as obj_yml:
-        resume.write("\\section{Objective}\n")
+        resume.write("\\section{Objective}")
         obj_data = yaml_load(obj_yml, Loader=yaml_loader)
         resume.write(obj_data["objective"].replace("R&D", "R\&D"))
-        resume.write("\\section{Qualified by}\n")
-        resume.write("\\begin{itemize}\n")
+        resume.write("\\section{Qualified by}")
+        resume.write("\\vskip\\baselineskip\n")
+        resume.write("\\begin{itemize}")
         for qual in obj_data["qualifications"]:
             resume.write("\\item " + qual)
-        resume.write("\\end{itemize}\n")
+        resume.write("\\end{itemize}")
 
     with open("../_data/experience.yml") as exp_yaml:
         resume.write("\\section{Experience}\n")
         exp_data = yaml_load(exp_yaml, Loader=yaml_loader)
         for company in exp_data:
             if len(company["name"]) > 20:
-                resume.write("{\\bf \href{" + company["home"] + "}{" + company["name"] + "}}" + midskip)
-                resume.write("\\rightline{\href{" + company["url"] + "}{" + company["department"]
-                             + ", " + company["location"] + "}}" + lilskip)
+                resume.write(
+                    "\\textbf{" + company["name"] + "}" + midskip
+                )
+                resume.write(
+                    "\\rightline{"
+                    + company["department"]
+                    + ", "
+                    + company["location"]
+                    + "}"
+                    + lilskip
+                )
             else:
-                resume.write("{\\bf \href{" + company["home"] + "}{" + company["name"] + "}}")
-                resume.write("\hfill \href{" + company["url"] + "}{" + company["department"]
-                             + ", " + company["location"] + "}" + lilskip)
+                resume.write(
+                    "\\textbf{" + company["name"] + "}"
+                )
+                resume.write(
+                    "\hfill{}"
+                    + company["department"]
+                    + ", "
+                    + company["location"]
+                    + lilskip
+                )
             for position in company["positions"]:
-                resume.write("\\textit{" + position["title"] + "} \hfill " + position["start"]
-                             + " to " + position["until"] + lilskip)
+                resume.write(
+                    "\\textit{"
+                    + position["title"]
+                    + "} \hfill{} "
+                    + position["start"]
+                    + " to "
+                    + position["until"]
+                    + lilskip
+                )
                 if "summary" in position:
-                    resume.write(str(position["summary"]).replace("&times;", "$\\times$") + bigskip)
+                    resume.write(
+                        str(position["summary"]).replace("&times;", "$\\times$")
+                        + bigskip
+                    )
 
     with open("../_data/education.yml") as edu_yaml:
         resume.write("\\section{Education}\n")
         edu_data = yaml_load(edu_yaml, Loader=yaml_loader)
         for school in edu_data:
-            resume.write("{\\bf \href{" + school["url"] + "}{" + school["name"] + "}} \\hfill "
-                         + school["location"] + midskip)
+            resume.write(
+                "\\textbf{"
+                + school["name"] + "}"
+                + "\\hfill{} "
+                + school["location"]
+                + midskip
+            )
             for degree in school["degrees"]:
-                resume.write("\\textit{" + degree["name"] + "} in " + degree["field"] + "\\hfill "
-                             + str(degree["start"]) + " to " + str(degree["until"]) + lilskip)
+                resume.write(
+                    "\\textit{"
+                    + degree["name"]
+                    + "} in "
+                    + degree["field"]
+                    + "\\hfill{} "
+                    + str(degree["start"])
+                    + " to "
+                    + str(degree["until"])
+                    + lilskip
+                )
                 if "thesis" in degree:
-                    resume.write("Thesis: \\gapuline{" + degree["thesis"] + "}")
+                    resume.write(
+                        "Thesis: \\href{"
+                        + degree["turl"]
+                        + "}{"
+                        + degree["thesis"]
+                        + "}"
+                    )
                 if "summary" in degree:
                     resume.write(midskip)
-                    resume.write(str(degree["summary"]).replace("<sup>2+</sup>", "$^{2+}$"))
+                    resume.write(
+                        str(degree["summary"]).replace("<sup>2+</sup>", "$^{2+}$")
+                    )
                 resume.write(bigskip)
 
     # with open("../_data/skills.yml") as skl_yaml:
@@ -74,15 +122,30 @@ with open("TKellerPhD.tex", "w") as resume:
         resume.write("\\section{Publications}\n")
         pub_data = yaml_load(pub_yaml, Loader=yaml_loader)
         for paper in pub_data:
-            resume.write(paper["authors"] + " ``" + str(paper["title"]).replace(".", ".''")
-                         + " \\textit{" + paper["journal"] + "}");
+            resume.write(
+                paper["title"] + " "
+                + paper["authors"]
+                + " \\textit{"
+                + paper["journal"]
+                + "}"
+            )
             if "volume" in paper:
                 resume.write(" {\\bf " + str(paper["volume"]) + "}")
-            resume.write(" (" + str(paper["year"]) + ") "
-                         + str(paper["pages"]).replace("&mdash;", "--") + ".")
+            resume.write(
+                " ("
+                + str(paper["year"])
+                + ") "
+                + str(paper["pages"]).replace("&mdash;", "--")
+                + "."
+            )
             if "doi" in paper:
-                resume.write(" DOI: \\href{https://doi.org/" + paper["doi"] + "}{"
-                             + str(paper["doi"]).replace("_", "\\_") + "}")
+                resume.write(
+                    " DOI: \\href{https://doi.org/"
+                    + paper["doi"]
+                    + "}{"
+                    + str(paper["doi"]).replace("_", "\\_")
+                    + "}."
+                )
             resume.write(midskip)
         resume.write("\n")
         # resume.write("\\vskip-4\\baselineskip\n")
@@ -91,23 +154,52 @@ with open("TKellerPhD.tex", "w") as resume:
         resume.write("\\section{Recognition}\n")
         awd_data = yaml_load(awd_yaml, Loader=yaml_loader)
         for org in awd_data:
-            resume.write("{\\bf " + str(org["name"]).replace("<em>", "\\textit{").replace("</em>", "}") + "}")
+            resume.write(
+                "{\\bf "
+                + str(org["name"]).replace("<em>", "\\textit{").replace("</em>", "}")
+                + "}"
+            )
             for award in org["awards"]:
                 resume.write(midskip)
-                resume.write("\\href{" + str(award["url"]) + "}{\\textit{" + str(award["name"]).replace("<em>", "\\textit{").replace("</em>", "}") + "}} "
-                             + "\\hfill " + str(award["date"]))
+                resume.write(
+                    "\\href{"
+                    + str(award["url"])
+                    + "}{\\textit{"
+                    + str(award["name"])
+                    .replace("<em>", "\\textit{")
+                    .replace("</em>", "}")
+                    + "}} "
+                    + "\\hfill{}"
+                    + str(award["date"])
+                )
                 if "summary" in award:
                     resume.write(lilskip)
-                    resume.write(str(award["summary"]).replace('."', ".''").replace('"', '``'))
+                    resume.write(
+                        str(award["summary"]).replace('."', ".''").replace('"', "``")
+                    )
             resume.write(bigskip)
 
     with open("../_data/projects.yml") as pro_yaml:
         resume.write("\\section{Projects}\n")
+        resume.write(
+            "\\textit{GitHub Portfolio:} \href{https://github.com/tkphd}{@tkphd}"
+        )
+        resume.write(midskip)
         pro_data = yaml_load(pro_yaml, Loader=yaml_loader)
         for project in pro_data:
-            resume.write("\\textit{" + project["role"]
-                         + "}, \href{" + project["url"] + "}{" + project["name"] + "}"
-                         + "\\hfill " + str(project["start"]) + " to " + str(project["until"]))
+            resume.write(
+                "\\textit{"
+                + project["role"]
+                + "}, \href{"
+                + project["url"]
+                + "}{"
+                + project["name"]
+                + "}"
+                + "\\hfill{}"
+                + str(project["start"])
+                + " to "
+                + str(project["until"])
+            )
             if "summary" in project:
                 resume.write(lilskip)
                 resume.write(str(project["summary"]).replace("&nbsp;", "~"))
@@ -126,10 +218,22 @@ with open("TKellerPhD.tex", "w") as resume:
             for talk in talks["presentations"]:
                 if "invited" in talk:
                     resume.write("{\\bf Invited:} ")
-                resume.write(str(talk["authors"]).rstrip().replace("<u>", "\\textit{").replace("</u>", "}") + ". ``"
-                             + str(talk["title"]).replace(".", ".''").replace("&amp;", "\&")  + " "
-                             + str(talk["conference"]).replace("&amp;", "\&") + ". " + talk["location"] + ": "
-                             + str(talk["date"]) + "." + midskip);
+                resume.write(
+                    str(talk["authors"])
+                    .rstrip()
+                    .replace("<u>", "\\textit{")
+                    .replace("</u>", "}")
+                    + ". ``"
+                    + str(talk["title"]).replace(".", ".''").replace("&amp;", "\&")
+                    + " "
+                    + str(talk["conference"]).replace("&amp;", "\&")
+                    + ". "
+                    + talk["location"]
+                    + ": "
+                    + str(talk["date"])
+                    + "."
+                    + midskip
+                )
 
     resume.write("\\end{resume}")
 

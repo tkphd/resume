@@ -7,20 +7,22 @@
   start: 2019
   until: Present
   summary: >
-    Global community of researchers building courses to teach new users foundational skills in
-    high-performance computational science. Focused on organizing and coordinating discussions
-    and contributions, helping the community grow and driving major curriculum improvements.
+    Global community of researchers building courses to teach new users
+    foundational skills in high-performance computational science. Focused on
+    organizing and coordinating discussions and contributions, helping the
+    community grow and driving major curriculum improvements.
 
-- name: High Performance Computing for Boundary Value Problems
-  url: https://hiperc.readthedocs.io
-  nickname: HiPerC
-  role: Creator
-  start: 2018
-  until: Present
-  summary: >
-    Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card computing frameworks
-    solving a canonical diffusion problem. Carefully documented to help fellow materials scientists
-    learn how to use these ubiquitous high-performance resources.
+# - name: High Performance Computing for Boundary Value Problems
+#   url: https://hiperc.readthedocs.io
+#   nickname: HiPerC
+#   role: Creator
+#   start: 2018
+#   until: Present
+#   summary: >
+#     Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card
+#     computing frameworks solving a canonical diffusion problem. Carefully
+#     documented to help fellow materials scientists learn how to use these
+#     ubiquitous high-performance resources.
 
 - name: The Phase-Field Community Hub
   url: https://pages.nist.gov/pfhub
@@ -29,16 +31,17 @@
   start: 2016
   until: Present
   summary: >
-    International community of phase-field researchers developing benchmarks and educational
-    materials. Focused on website back-end development and content creation.
+    International community of phase-field researchers developing benchmarks
+    and educational materials. Focused on website back-end development and
+    content creation.
 
 - name: Mesoscale Microstructure Simulation Project
   url: https://github.com/mesoscale/mmsp
   nickname: MMSP
   role: Developer
   start: 2013
-  until: Present
+  until: present
   summary: >
-    Open source high-performance phase-field code with a parallel distributed-memory back-end
-    written in C++. Eliminated memory leaks and race conditions in parallel computing
-    environments.
+    Open source high-performance phase-field code with a parallel
+    distributed-memory back-end written in C++. Eliminated memory leaks and
+    race conditions in parallel computing environments.

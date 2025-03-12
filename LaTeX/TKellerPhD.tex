@@ -1,7 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
 \usepackage{contour,enumitem,hyperref,graphicx,textcomp,ulem,xcolor}
-\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue!10!black}
+\hypersetup{colorlinks, citecolor=blue, filecolor=black, linkcolor=blue, urlcolor=blue}
 
 \resumewidth=6.7in
 \newsectionwidth{22mm}
@@ -18,87 +18,82 @@
   \uline{\phantom{#1}}%
   \llap{\contour{white}{#1}}%
 }
-
+\renewcommand{\labelitemi}{$\circ$}
 \frenchspacing
 \begin{document}
-\begin{resume}\section{Objective}
-To deliver a Renaissance in scientific productivity for an R\&D lab through
+\begin{resume}\section{Objective}To deliver a Renaissance in scientific productivity for an R\&D lab through
 strategic investments in high-performance computing and data science
 personnel, training, and infrastructure, as Director of Research Computing.
-\section{Qualified by}
-\begin{itemize}
-\item Fifteen years of success in academic, private-, and public-sector research labs as a scientist-and-sysadmin, contributing to high-impact projects and publications while maintaining and upgrading compute and data storage systems. Zero data lost; innumerable lessons learned.\item Demonstrated ability to teach, learn, and make the right connections happen -- from training materials to practical implementations, or from one siloed researcher to many others.\end{itemize}
-\section{Experience}
-{\bf \href{https://www.nist.gov}{National Institute of Standards and Technology}}\\[0.25\baselineskip]
-\rightline{\href{https://www.nist.gov/mml/materials-science-and-engineering-division}{Materials Science and Engineering Division, Gaithersburg, MD}}\\
-\textit{Research Engineer} \hfill July 2017 to Present\\
+\section{Qualified by}\vskip\baselineskip
+\begin{itemize}\item Fifteen years of success in academic, private-, and public-sector research labs as a scientist-and-sysadmin, contributing to high-impact projects and publications while maintaining and upgrading compute and data storage systems. Zero data lost; innumerable lessons learned.\item Demonstrated ability to teach, learn, and make the right connections happen---from training materials to practical implementations, and from one siloed researcher to many others.\end{itemize}\section{Experience}
+\textbf{National Institute of Standards and Technology}\\[0.25\baselineskip]
+\rightline{Materials Science and Engineering Division, Gaithersburg, MD}\\
+\textit{Research Engineer} \hfill{} 2017 to Present\\
 Maintained 70-node HPC cluster and data storage; improved research reproducibility by centralizing software builds; alleviated filesystem resource contention through workflow analysis and user education. Orchestrated democratic elections for High Performance Computing Carpentry, leading to incubation as a Carpentries Lesson Program.
 
 
-\textit{Postdoctoral Associate} \hfill July 2015 to June 2017\\
+\textit{Postdoctoral Associate} \hfill{} 2015 to 2017\\
 Implemented phase-field model for solid-state transformation in alloy systems with three components and four phases, analogous to Inconel 625, to simulate microstructure evolution during heat treatment of additively manufactured parts. Produced thermodynamic models through simplification of quantitative CALPHAD databases while retaining key phase diagram features, using computer algebra systems to accurately generate expressions and multivariable derivatives.
 
 
-{\bf \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{DayStar Technologies}}\hfill \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{Materials Development Group, Clifton Park, NY}\\
-\textit{Process Engineer (part-time)} \hfill July 2009 to August 2011\\
-\textit{Process Engineer} \hfill January 2009 to June 2009\\
-\textit{Process Technician} \hfill July 2006 to December 2008\\
+\textbf{DayStar Technologies}\hfill{}Materials Development Group, Clifton Park, NY\\
+\textit{Process Engineer (part-time during M.S.)} \hfill{} 2009 to 2011\\
+\textit{Process Engineer} \hfill{} 2009 to 2009\\
+\textit{Process Technician} \hfill{} 2006 to 2008\\
 Achieved 72$\times$ scaleup in CdS deposition area with only 6$\times$ increase in waste generation. Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic materials and novel reactor geometries. Traveled to Helsinki, Finland, to evaluate an atomic layer deposition reactor and reported back to senior management.
 
 
 \section{Education}
-{\bf \href{http://www.rpi.edu}{Rensselaer Polytechnic Institute}} \hfill Troy, NY\\[0.25\baselineskip]
-\textit{Doctor of Philosophy} in Materials Engineering\hfill September 2011 to May 2015\\
-Thesis: \gapuline{Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature}\\[0.25\baselineskip]
+\textbf{Rensselaer Polytechnic Institute}\hfill{} Troy, NY\\[0.25\baselineskip]
+\textit{Doctor of Philosophy} in Materials Engineering\hfill{} 2011 to 2015\\
+Thesis: \href{https://hdl.handle.net/20.500.13015/4}{Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature}\\[0.25\baselineskip]
 Performed large-scale phase field simulations of normal isotropic grain growth on high performance computing clusters including AMOS, an IBM Blue Gene/Q supercomputer. Designed and implemented algorithms to reconstruct polyhedral grain topology (faces, edges, and vertices) from diffuse interfaces in 2D and 3D phase field datasets. Found the process of triangular face elimination responsible for biasing topology in populations of polyhedral grains in synthetic, simulated, and real metal microstructures.
 
 
-\textit{Master of Science} in Materials Engineering\hfill September 2009 to May 2011\\
-Thesis: \gapuline{Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution}\\[0.25\baselineskip]
+\textit{Master of Science} in Materials Engineering\hfill{} 2009 to 2011\\
+Thesis: \href{https://hdl.handle.net/20.500.13015/4}{Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution}\\[0.25\baselineskip]
 Designed experiments to deposit ZnO on glass substrates using a novel flow-through aqueous chemical reactor. Found minor effects of Mg$^{2+}$ ions on ZnO film stress and lattice parameters.
 
 
-\textit{Bachelor of Science} in Chemical Engineering\hfill September 2002 to May 2006\\
+\textit{Bachelor of Science} in Chemical Engineering\hfill{} 2002 to 2006\\
 
 
 \end{resume}\newpage\begin{resume}\section{Publications}
-A. Reid, A. O'Cais, T. Keller, W. Purwanto, and A. Alim Rasel. ``HPC Carpentry: A scalable, peer-reviewed training program to democratize HPC access.'' \textit{Journal of Computational Science Education} {\bf 15} (2024) 32--34. DOI: \href{https://doi.org/10.22369/issn.2153-4136/15/1/6}{10.22369/issn.2153-4136/15/1/6}\\[0.25\baselineskip]
-D. Wheeler, T. Keller, S. DeWitt, A. Jokisaari, D. Schwen, J. Guyer, L. Aagesen, O. Heinonen, M. Tonks, P. Voorhees, and J. Warren.
- ``PFHub: The Phase-Field Community Hub.''
- \textit{Journal of Open Research Software} {\bf 7} (2019) 29. DOI: \href{https://doi.org/10.5334/jors.276}{10.5334/jors.276}\\[0.25\baselineskip]
-T. Keller, G. Lindwall, S. Ghosh, L. Ma, B. Lane, F. Zhang, U. Kattner, J. Heigel, E. Lass, Y. Idell, M. Williams, A. Allen, J. Guyer, and L. Levine.
- ``Application of finite element, phase-field, and CALPHAD-based methods to additive manufacturing of Ni alloys.''
- \textit{Acta Materialia} {\bf 139} (2017) 244--253. DOI: \href{https://doi.org/10.1016/j.actamat.2017.05.003}{10.1016/j.actamat.2017.05.003}\\[0.25\baselineskip]
-T. Keller, B. Cutler, E. Lazar, and D. Lewis. ``Comparative grain topology.''
- \textit{Acta Materialia} {\bf 66} (2014) 414--423. DOI: \href{https://doi.org/10.1016/j.actamat.2013.11.039}{10.1016/j.actamat.2013.11.039}\\[0.25\baselineskip]
-T. Keller, B. Cutler, M. Glicksman, and D. Lewis. ``Enumeration of polyhedra for grain growth analysis.''
- \textit{Proceedings of the First International Conference on 3D Materials Science} (2012) 97--106. DOI: \href{https://doi.org/10.1007/978-3-319-48762-5_15}{10.1007/978-3-319-48762-5\_15}\\[0.25\baselineskip]
+HPC Carpentry: A scalable, peer-reviewed training program to democratize HPC access. A. Reid, A. O'Cais, T. Keller, W. Purwanto, and A. Alim Rasel. \textit{Journal of Computational Science Education} {\bf 15} (2024) 32--34. DOI: \href{https://doi.org/10.22369/issn.2153-4136/15/1/6}{10.22369/issn.2153-4136/15/1/6}.\\[0.25\baselineskip]
+PFHub: The Phase-Field Community Hub.
+ D. Wheeler, T. Keller, S. DeWitt, A. Jokisaari, D. Schwen, J. Guyer, L. Aagesen, O. Heinonen, M. Tonks, P. Voorhees, and J. Warren.
+ \textit{Journal of Open Research Software} {\bf 7} (2019) 29. DOI: \href{https://doi.org/10.5334/jors.276}{10.5334/jors.276}.\\[0.25\baselineskip]
+Application of finite element, phase-field, and CALPHAD-based methods to additive manufacturing of Ni alloys.
+ T. Keller, G. Lindwall, S. Ghosh, L. Ma, B. Lane, F. Zhang, U. Kattner, J. Heigel, E. Lass, Y. Idell, M. Williams, A. Allen, J. Guyer, and L. Levine.
+ \textit{Acta Materialia} {\bf 139} (2017) 244--253. DOI: \href{https://doi.org/10.1016/j.actamat.2017.05.003}{10.1016/j.actamat.2017.05.003}.\\[0.25\baselineskip]
+Comparative grain topology.
+ T. Keller, B. Cutler, E. Lazar, and D. Lewis. \textit{Acta Materialia} {\bf 66} (2014) 414--423. DOI: \href{https://doi.org/10.1016/j.actamat.2013.11.039}{10.1016/j.actamat.2013.11.039}.\\[0.25\baselineskip]
+Enumeration of polyhedra for grain growth analysis.
+ T. Keller, B. Cutler, M. Glicksman, and D. Lewis. \textit{Proceedings of the First International Conference on 3D Materials Science} (2012) 97--106. DOI: \href{https://doi.org/10.1007/978-3-319-48762-5_15}{10.1007/978-3-319-48762-5\_15}.\\[0.25\baselineskip]
 
 \section{Recognition}
 {\bf U.S. Department of Commerce}\\[0.25\baselineskip]
-\href{https://www.nist.gov/nist-awards/2021-bronze-medal-award-daniel-wheeler-trevor-keller-jonathan-guyer-james-warren}{\textit{Bronze Medal Award}} \hfill 2021\\
+\href{https://www.nist.gov/nist-awards/2021-bronze-medal-award-daniel-wheeler-trevor-keller-jonathan-guyer-james-warren}{\textit{Bronze Medal Award}} \hfill{}2021\\
 ``The group is recognized for leading a stakeholder community to establish benchmarks for evaluating and validating phase field simulation software useful to the design and manufacture of advanced materials. The group convened and led 10 workshops since 2015 to establish eight distinct benchmark challenges, and to determine stakeholder needs for a benchmark repository and database. The resulting digital infrastructure that the group built, PFHub, is used by scientists worldwide and is broadly recognized as the world’s authoritative resource for validating phase field simulation software and results.''
 
 
 {\bf National Institute of Standards and Technology}\\[0.25\baselineskip]
-\href{https://www.nist.gov/mml/mml-accolades/2018-accolades/technical-excellence-2018}{\textit{Material Measurement Laboratory Accolade}} \hfill 2018\\
+\href{https://www.nist.gov/mml/mml-accolades/2018-accolades/technical-excellence-2018}{\textit{Material Measurement Laboratory Accolade}} \hfill{}2018\\
 ``For exceptional contribution to the field of metal additive manufacturing with a focus on developing integrated simulation methods to predict microstructure evolution based on phase-field models, computational thermodynamics, and finite element analysis.''
 
 
 {\bf \textit{Acta Materialia} and \textit{Scripta Materialia}}\\[0.25\baselineskip]
-\href{https://doi.org/10.1016/j.actamat.2019.04.059}{\textit{Outstanding Reviewer Award}} \hfill 2017 and 2018
+\href{https://doi.org/10.1016/j.actamat.2019.04.059}{\textit{Outstanding Reviewer Award}} \hfill{}2017 and 2018
 
 \section{Projects}
-\textit{Steering Committee Member}, \href{http://www.hpc-carpentry.org}{High Performance Computing Carpentry}\hfill 2019 to Present\\
+\textit{GitHub Portfolio:} \href{https://github.com/tkphd}{@tkphd}\\[0.25\baselineskip]
+\textit{Steering Committee Member}, \href{http://www.hpc-carpentry.org}{High Performance Computing Carpentry}\hfill{}2019 to Present\\
 Global community of researchers building courses to teach new users foundational skills in high-performance computational science. Focused on organizing and coordinating discussions and contributions, helping the community grow and driving major curriculum improvements.
 \\[0.25\baselineskip]
-\textit{Creator}, \href{https://hiperc.readthedocs.io}{High Performance Computing for Boundary Value Problems}\hfill 2018 to Present\\
-Apples-to-apples comparison of CUDA, OpenCL, and OpenACC graphics card computing frameworks solving a canonical diffusion problem. Carefully documented to help fellow materials scientists learn how to use these ubiquitous high-performance resources.
-\\[0.25\baselineskip]
-\textit{Developer}, \href{https://pages.nist.gov/pfhub}{The Phase-Field Community Hub}\hfill 2016 to Present\\
+\textit{Developer}, \href{https://pages.nist.gov/pfhub}{The Phase-Field Community Hub}\hfill{}2016 to Present\\
 International community of phase-field researchers developing benchmarks and educational materials. Focused on website back-end development and content creation.
 \\[0.25\baselineskip]
-\textit{Developer}, \href{https://github.com/mesoscale/mmsp}{Mesoscale Microstructure Simulation Project}\hfill 2013 to Present\\
+\textit{Developer}, \href{https://github.com/mesoscale/mmsp}{Mesoscale Microstructure Simulation Project}\hfill{}2013 to present\\
 Open source high-performance phase-field code with a parallel distributed-memory back-end written in C++. Eliminated memory leaks and race conditions in parallel computing environments.
 \\[0.25\baselineskip]
 \end{resume}\vskip-2\baselineskip\newpage\begin{resume}\section{Presentations}

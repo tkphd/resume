@@ -6,7 +6,7 @@
   url: https://www.nist.gov/mml/materials-science-and-engineering-division
   positions:
     - title: Research Engineer
-      start: July 2017
+      start: "2017"  # July
       until: Present
       summary: >
         Maintained 70-node HPC cluster and data storage; improved research
@@ -16,8 +16,8 @@
         Carpentry, leading to incubation as a Carpentries Lesson Program.
 
     - title: Postdoctoral Associate
-      start: July 2015
-      until: June 2017
+      start: "2015"  # July
+      until: "2017"  # June
       summary: >
         Implemented phase-field model for solid-state transformation in alloy
         systems with three components and four phases, analogous to Inconel
@@ -34,15 +34,15 @@
   home: https://web.archive.org/web/20090209214859/http://daystartech.com/
   caveat: Defunct.
   positions:
-    - title: Process Engineer (part-time)
-      start: July 2009
-      until: August 2011
+    - title: Process Engineer (part-time during M.S.)
+      start: "2009"  # July
+      until: "2011"  # August
     - title: Process Engineer
-      start: January 2009
-      until: June 2009
+      start: "2009"  # January
+      until: "2009"  # June
     - title: Process Technician
-      start: July 2006
-      until: December 2008
+      start: "2006"  # July
+      until: "2008"  # December
       summary: >
         Achieved 72&times; scaleup in CdS deposition area with only 6&times;
         increase in waste generation. Researched alternatives to chemical bath
