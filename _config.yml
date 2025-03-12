@@ -30,6 +30,7 @@ resume_summary: >
 
 # Decide which sections to use
 # comment out to hide
+resume_section_objective:    true
 resume_section_experience:   true
 resume_section_education:    true
 resume_section_publications: true

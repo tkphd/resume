@@ -14,6 +14,16 @@ with open("TKellerPhD.tex", "w") as resume:
 
     resume.write("\\begin{resume}")
 
+    with open("../_data/objective.yml") as obj_yml:
+        resume.write("\\section{Objective}\n")
+        obj_data = yaml_load(obj_yml, Loader=yaml_loader)
+        resume.write(obj_data["objective"].replace("R&D", "R\&D"))
+        resume.write("\\section{Qualified by}\n")
+        resume.write("\\begin{itemize}\n")
+        for qual in obj_data["qualifications"]:
+            resume.write("\\item " + qual)
+        resume.write("\\end{itemize}\n")
+
     with open("../_data/experience.yml") as exp_yaml:
         resume.write("\\section{Experience}\n")
         exp_data = yaml_load(exp_yaml, Loader=yaml_loader)
@@ -48,13 +58,13 @@ with open("TKellerPhD.tex", "w") as resume:
                     resume.write(str(degree["summary"]).replace("<sup>2+</sup>", "$^{2+}$"))
                 resume.write(bigskip)
 
-    with open("../_data/skills.yml") as skl_yaml:
-        resume.write("\\section{Skills}\n")
-        skl_data = yaml_load(skl_yaml, Loader=yaml_loader)
-        for sets in skl_data:
-            if "Scientific" in str(sets["name"]):
-                for skills in sets["skills"]:
-                    resume.write(str(skills["name"]) + midskip)
+    # with open("../_data/skills.yml") as skl_yaml:
+    #     resume.write("\\section{Skills}\n")
+    #     skl_data = yaml_load(skl_yaml, Loader=yaml_loader)
+    #     for sets in skl_data:
+    #         if "Scientific" in str(sets["name"]):
+    #             for skills in sets["skills"]:
+    #                 resume.write(str(skills["name"]) + midskip)
 
     resume.write("\\end{resume}")
     resume.write("\\newpage")
@@ -101,9 +111,11 @@ with open("TKellerPhD.tex", "w") as resume:
             if "summary" in project:
                 resume.write(lilskip)
                 resume.write(str(project["summary"]).replace("&nbsp;", "~"))
+
             resume.write(midskip)
 
     resume.write("\\end{resume}")
+    resume.write("\\vskip-2\\baselineskip")
     resume.write("\\newpage")
     resume.write("\\begin{resume}")
 

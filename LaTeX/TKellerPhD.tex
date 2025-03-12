@@ -7,8 +7,8 @@
 \newsectionwidth{22mm}
 
 \name{Trevor~Keller,~Ph.\,D.}
-\address{1661 Linwood Drive $\star$ Wooster, Ohio 44691 $\star$
-     \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com}} % $\star$ (518) 364-9282}
+\address{1661 Linwood Drive $\star$ Wooster, Ohio 44691} % $\star$
+     % \href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com}} % $\star$ (518) 364-9282}
 
 % Create an underline style that steps around descenders
 \renewcommand{\ULdepth}{1.8pt}
@@ -21,26 +21,29 @@
 
 \frenchspacing
 \begin{document}
-\begin{resume}\section{Experience}
+\begin{resume}\section{Objective}
+To deliver a Renaissance in scientific productivity for an R\&D lab through
+strategic investments in high-performance computing and data science
+personnel, training, and infrastructure, as Director of Research Computing.
+\section{Qualified by}
+\begin{itemize}
+\item Fifteen years of success in academic, private-, and public-sector research labs as a scientist-and-sysadmin, contributing to high-impact projects and publications while maintaining and upgrading compute and data storage systems. Zero data lost; innumerable lessons learned.\item Demonstrated ability to teach, learn, and make the right connections happen -- from training materials to practical implementations, or from one siloed researcher to many others.\end{itemize}
+\section{Experience}
 {\bf \href{https://www.nist.gov}{National Institute of Standards and Technology}}\\[0.25\baselineskip]
 \rightline{\href{https://www.nist.gov/mml/materials-science-and-engineering-division}{Materials Science and Engineering Division, Gaithersburg, MD}}\\
 \textit{Research Engineer} \hfill July 2017 to Present\\
-Extended phase-field model of Inconel 625 with more thermodynamically-consistent diffusion parameters while overhauling mathematical framework. Monitored, maintained, and upgraded shared computer hardware in the Center for Theoretical and Computational Materials Science; helped to address user concerns by building updated software versions and exploring filesystem upgrades to alleviate resource contention. Developed training materials through High Performance Computing Carpentry, created user-editable Wiki pages for CTCMS and Enki clusters, and documented major cluster features and common workflows for each. 
+Maintained 70-node HPC cluster and data storage; improved research reproducibility by centralizing software builds; alleviated filesystem resource contention through workflow analysis and user education. Orchestrated democratic elections for High Performance Computing Carpentry, leading to incubation as a Carpentries Lesson Program.
 
 
-\textit{NRC Postdoctoral Associate} \hfill July 2015 to June 2017\\
-Implemented phase-field model for solid-state transformation in alloy systems with three components and four phases, analogous to Inconel 625. Designed initial conditions based on electron micrographs of additively manufactured Inconel 625 to simulate microstructure evolution during heat treatment. Produced thermodynamic models through simplification of quantitative CALPHAD databases while retaining key phase diagram features, using computer algebra systems to accurately generate expressions and multivariable derivatives for import into phase-field software.
-
-
-{\bf \href{https://www.veeco.com}{Veeco Instruments}}\hfill \href{https://www.veeco.com/company/news/veeco-establishes-solar-process-development-center}{Solar Process Development Center, Clifton Park, NY}\\
-\textit{Process Engineer} \hfill July 2009 to August 2011\\
-Part-time during master's degree. Researched non-toxic alternatives to CdS, reporting to senior management. Traveled to Helsinki to evaluate state-of-the-art atomic layer deposition reactor.
+\textit{Postdoctoral Associate} \hfill July 2015 to June 2017\\
+Implemented phase-field model for solid-state transformation in alloy systems with three components and four phases, analogous to Inconel 625, to simulate microstructure evolution during heat treatment of additively manufactured parts. Produced thermodynamic models through simplification of quantitative CALPHAD databases while retaining key phase diagram features, using computer algebra systems to accurately generate expressions and multivariable derivatives.
 
 
 {\bf \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{DayStar Technologies}}\hfill \href{https://web.archive.org/web/20090209214859/http://daystartech.com/}{Materials Development Group, Clifton Park, NY}\\
+\textit{Process Engineer (part-time)} \hfill July 2009 to August 2011\\
 \textit{Process Engineer} \hfill January 2009 to June 2009\\
 \textit{Process Technician} \hfill July 2006 to December 2008\\
-Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic materials and novel reactor geometries. Achieved 72$\times$ scaleup in CdS deposition area with only 6$\times$ increase in waste generation.
+Achieved 72$\times$ scaleup in CdS deposition area with only 6$\times$ increase in waste generation. Researched alternatives to chemical bath deposition of CdS thin films, including nontoxic materials and novel reactor geometries. Traveled to Helsinki, Finland, to evaluate an atomic layer deposition reactor and reported back to senior management.
 
 
 \section{Education}
@@ -58,9 +61,6 @@ Designed experiments to deposit ZnO on glass substrates using a novel flow-throu
 \textit{Bachelor of Science} in Chemical Engineering\hfill September 2002 to May 2006\\
 
 
-\section{Skills}
-Teaching as a Carpentries Instructor: Python, Unix Shell, Version Control.\\[0.25\baselineskip]
-Programming languages: C, C++, Python, shell (bash); CUDA, MPI-2/MPI-IO, OpenMP.\\[0.25\baselineskip]
 \end{resume}\newpage\begin{resume}\section{Publications}
 A. Reid, A. O'Cais, T. Keller, W. Purwanto, and A. Alim Rasel. ``HPC Carpentry: A scalable, peer-reviewed training program to democratize HPC access.'' \textit{Journal of Computational Science Education} {\bf 15} (2024) 32--34. DOI: \href{https://doi.org/10.22369/issn.2153-4136/15/1/6}{10.22369/issn.2153-4136/15/1/6}\\[0.25\baselineskip]
 D. Wheeler, T. Keller, S. DeWitt, A. Jokisaari, D. Schwen, J. Guyer, L. Aagesen, O. Heinonen, M. Tonks, P. Voorhees, and J. Warren.
@@ -101,7 +101,7 @@ International community of phase-field researchers developing benchmarks and edu
 \textit{Developer}, \href{https://github.com/mesoscale/mmsp}{Mesoscale Microstructure Simulation Project}\hfill 2013 to Present\\
 Open source high-performance phase-field code with a parallel distributed-memory back-end written in C++. Eliminated memory leaks and race conditions in parallel computing environments.
 \\[0.25\baselineskip]
-\end{resume}\newpage\begin{resume}\section{Presentations}
+\end{resume}\vskip-2\baselineskip\newpage\begin{resume}\section{Presentations}
 {\bf Invited:} \textit{T. Keller}. ``Modeling additively manufactured superalloy microstructures.''
  NIMS-SIP International Additive Manufacturing Workshop. Tsukuba, Ibaraki, Japan: January 29, 2020.\\[0.25\baselineskip]
 \textit{T. Keller}, N. Ofori-Opoku, U. Kattner, K. Moon, M. Williams, G. Lindwall, and J. Guyer. ``Phase Field Study of a Ternary IN625 Analog.''
