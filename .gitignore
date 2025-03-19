@@ -6,8 +6,9 @@ _site
 *.#*
 *.directory
 *.gz
-LaTeX/*.aux
-LaTeX/*.fdb_latexmk
-LaTeX/*.fls
-LaTeX/*.log
-LaTeX/*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf

@@ -42,24 +42,8 @@
         <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
         {% else %}
         {% endif %}
-
       </header>
 
-      {% if site.resume_section_experience %}
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Objective</h2>
-          <p>{{ site.data.objective.objective }}</p>
-          <h2>Qualified by</h2>
-          <ul class="resume-item-list">
-            {% for qual in site.data.objective.qualifications %}
-            <li>{{ qual }}</li>
-            {% endfor %}
-          </ul>
-
-        </header>
-      </section>
-      {% endif %}
       {% if site.resume_section_experience %}
       <section class="content-section">
         <header class="section-header">
