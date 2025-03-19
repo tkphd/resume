@@ -1,0 +1,210 @@
+% Trevor Keller's one-page resume, built on PlushCV by @cystema
+\documentclass[letterpaper]{plushcv}
+\usepackage{paracol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+\namesection{Trevor}{Keller, Ph.\,D.}{
+  }{\vskip-0.5\baselineskip{}
+  \contactline{\href{https://www.trevorkeller.com}{trevorkeller.com} | Wooster,\,Ohio
+  }{\href{https://www.github.com/tkphd}{tkphd}
+  }{\href{mailto:trevor@trevorkeller.com}{trevor@trevorkeller.com}
+  }{\href{tel:+15183649282}{(518)\,364-9282}}
+}
+
+\vskip-0.75\baselineskip{}
+\textbf{Scientist and Sysadmin} thriving at the intersection of mathematical
+models, high-performance computing, and data storage.
+Specializing in Linux clusters and solid-state microstructure evolution in
+metals.
+Passionate about building a better tomorrow.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN ONE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\columnratio{0.6375}
+\begin{paracol}{2}
+
+\switchcolumn[0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{National Institute of Standards \&{} Technology}
+\descript{| Engineer}
+\location{2015 – Present | Gaithersburg, Maryland}
+\begin{tightemize}
+\item Co-admin with root on a 100-node cluster serving
+      70 scientists with 300~TB of replicated working data.
+\item Built and tuned VASP on behalf of users, managed access via LDAP.
+\item Wrote a \href{https://doi.org/10.1016/j.actamat.2017.05.003}{widely cited paper}
+      with 12 colleagues explaining commonly observed microstructure of additively manufactured metals.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{DayStar Technologies}
+\descript{| Process Engineer}
+\location{2006 – 2009 | Clifton Park, New York}
+\begin{tightemize}
+\item Evaluated aqueous ZnO deposition as a non-toxic substitute for CdS in
+      thin-film solar cells. Could not match the heavy metal's performance.
+\item Achieved 72$\times$ scale-up in aqueous CdS deposition area while generating only
+      6$\times$ the waste using a flow-through reactor geometry.
+\item Assessed a dry commercial reactor in Helsinki, Finland, reporting
+      on its viability to senior management.
+\end{tightemize}
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{HPC Carpentry}
+\descript{| Steering Committee member}
+\location{2019 – Present | \href{https://www.hpc-carpentry.org}{hpc-carpentry.org}}
+\begin{tightemize}
+\item Collaborated with a worldwide group of volunteers, mostly cluster
+      sysadmins, to develop an approachable two-day introduction to
+      high-performance computing for novices.
+\item Successfully drove our petition for official recognition from The
+      Carpentries, now working through their Incubation program.
+\item Codified asynchronous democratic decisionmaking practices.
+\end{tightemize}
+\sectionsep{}
+
+\subsection{PFHub}
+\location{2015 – Present | \href{https://pages.nist.gov/pfhub}{pages.nist.gov/pfhub}}
+\begin{tightemize}
+\item Collaborated with North American academics and Federal research staff at
+      twice-yearly workshops on phase-field methods.
+\item Assisted with design and implementation of a website to ingest and
+      display submitted results for comparison, without CMS.
+\item Collaborating with a half-dozen researchers to build a FAIR schema
+      for phase-field simulation datasets.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{MMSP}
+\location{2012 – Present |
+  \href{https://github.com/mesoscale/mmsp}{github.com/mesoscale}}
+\begin{tightemize}
+\item Executed parallel jobs with 8,192 cores on a BlueGene/Q supercomputer.
+\item Refactored templated C++ codebase to use non-blocking MPI calls.
+\item Implemented a staged file I/O method to resolve corruption on disk.
+\item Invisibly swapped endianness of binary data at read-time due to mismatch
+      between supercomputer (big) and workstation (little).
+\end{tightemize}
+\sectionsep{}
+
+\section{Notable Works}
+
+\begin{tabular}{rl}
+HPC Carpentry: & 
+  \href{https://doi.org/10.22369/issn.2153-4136/15/1/6}{doi.org/10.22369/issn.2153-4136/15/1/6} \\
+PFHub platform: & 
+  \href{https://doi.org/10.5334/jors.276}{doi.org/10.5334/jors.276}\\
+Additive research: & 
+   \href{https://doi.org/10.1016/j.actamat.2017.05.003}{doi.org/10.1016/j.actamat.2017.05.003}\\
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN TWO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\switchcolumn[1]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\runsubsection{Operations}
+\descript{| Debian}
+\sectionsep{}
+\location{Proficient:}
+SSH \textbullet{} Slurm \textbullet{} Bash \textbullet{} Ansible \textbullet{} YAML\\
+
+\sectionsep{}
+
+\location{Experienced:}
+LDAP \textbullet{} Grafana \textbullet{} NFS \textbullet{} mdadm \\
+\sectionsep{}
+\sectionsep{}
+
+\subsection{Programming}
+\sectionsep{}
+\location{Proficient:}
+Python \textbullet{} git \textbullet{} C/C++ \textbullet{} Make \textbullet{} MPI\\
+\sectionsep{}
+
+\location{Experienced:}
+Pandas \textbullet{} R \textbullet{} CUDA \textbullet{} Apptainer \\
+\sectionsep{}
+\sectionsep{}
+
+\subsection{Documentation}
+\sectionsep{}
+Markdown \textbullet{} \LaTeX{} \textbullet{} Doxygen \textbullet{} Pandoc \\
+\sectionsep{}
+\sectionsep{}
+
+\subsection{Libraries/Frameworks}
+\sectionsep{}
+Lmod \textbullet{} MPI \textbullet{} OpenMP \textbullet{} Jekyll \\
+\sectionsep{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Rensselaer Polytechnic Institute}
+\descript{Ph.D., Materials Engineering}
+\location{2011 – 2015 | Troy, New York}
+\vspace{2pt}
+
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/book.png}
+\href{https://hdl.handle.net/20.500.13015/1441}{
+  Bias in Polycrystal Topology Caused by Grain Boundary Motion by Mean Curvature}
+\sectionsep{}
+
+\descript{M.S., Materials Engineering}
+\location{2009 – 2011 | Troy, New York}
+\vspace{2pt}
+
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/book.png} % \hspace{0.2cm}
+\href{https://hdl.handle.net/20.500.13015/3269}{
+  Effects of Magnesium(II) on Zinc Oxide Nanorod Growth From Aqueous Solution}
+\sectionsep{}
+
+\descript{B.S., Chemical Engineering}
+\location{2002 – 2006 | Troy, New York}
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+
+\begin{tabular}{ll}
+2021 & \href{https://www.nist.gov/nist-awards/2021-bronze-medal-award-daniel-wheeler-trevor-keller-jonathan-guyer-james-warren}{Dept. of Commerce Bronze Medal} \\
+2018 & \href{https://www.nist.gov/mml/mml-accolades/2018-accolades/technical-excellence-2018}{NIST MML Accolade}   \\
+\end{tabular}
+
+
+\end{paracol}
+
+\end{document}
+\documentclass[]{article}
