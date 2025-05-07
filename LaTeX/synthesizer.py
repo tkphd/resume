@@ -15,15 +15,15 @@ with open("TKellerPhD.tex", "w") as resume:
     resume.write("\\begin{resume}")
 
     with open("../_data/objective.yml") as obj_yml:
-        resume.write("\\section{Objective}")
+        # resume.write("\\section{Objective}")
         obj_data = yaml_load(obj_yml, Loader=yaml_loader)
         resume.write(obj_data["objective"].replace("R&D", "R\&D"))
-        resume.write("\\section{Qualified by}")
-        resume.write("\\vskip\\baselineskip\n")
-        resume.write("\\begin{itemize}")
-        for qual in obj_data["qualifications"]:
-            resume.write("\\item " + qual)
-        resume.write("\\end{itemize}")
+        # resume.write("\\section{Qualified by}")
+        # resume.write("\\vskip\\baselineskip\n")
+        # resume.write("\\begin{itemize}")
+        # for qual in obj_data["qualifications"]:
+        #     resume.write("\\item " + qual)
+        # resume.write("\\end{itemize}")
 
     with open("../_data/experience.yml") as exp_yaml:
         resume.write("\\section{Experience}\n")
